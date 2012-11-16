@@ -1,0 +1,384 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<title>Kroger | Expressions from Hallmark - Spring 2012</title>
+<meta name="keywords" content="Instore details,online coupons,promotions">
+<meta name="description" content="">
+
+<!-- INSTORE BROADCASTING SPECIFIC FLASH JS INCLUDES -->
+ <script src="index_files/swfobject.js" type="text/javascript"></script>
+ <script src="index_files/swfaddress.js" type="text/javascript"></script>
+<!-- /INSTORE BROADCASTING SPECIFIC FLASH JS INCLUDES -->
+
+
+<!-- Begin Partner Hosted JavaScript and CSS Files -->
+    <script type="text/javascript" src="index_files/prototype.js"></script>
+    <script type="text/javascript" src="index_files/lowpro.js"></script>
+    <script type="text/javascript" src="index_files/menus.js"></script>
+    <script type="text/javascript" src="index_files/global.js"></script>
+    <script type="text/javascript" src="index_files/moo.js"></script>
+    <script type="text/javascript" src="index_files/scroll.js"></script>
+    <script type="text/javascript" src="index_files/toggle.js"></script>
+    <script type="text/javascript" src="index_files/UFO.js"></script>
+<!-- Begin 06/13/08 Update #1 -->
+	<script type="text/javascript" src="index_files/partners.js"></script>
+<!-- End 06/13/08 Update #1 -->
+    <link href="index_files/kroger.css" rel="stylesheet" type="text/css">
+    <link href="index_files/landingFooter.css" rel="stylesheet" type="text/css">
+<!-- End Partner Hosted JavaScript and CSS Files -->
+	<script language="javascript">
+	function searchKroger() {
+	searchUrl = "http://www.kroger.com/Pages/results.aspx?k="+document.fmSearch.searchTerm.value;
+	location.href=searchUrl;}
+	</script>
+<!-- Red Olive Hack to get url correct from JS file -->    
+  <script language="javascript">  
+  
+  function findStores() {
+	if (document.fmFindStores.ctl00$StoreSearch1$cbFuel.checked == 1)
+	{vFuel="search15=1&FuelCenter=True"} else {vFuel="search15=0&FuelCenter=False"}
+	if (document.fmFindStores.ctl00$StoreSearch1$cbPharmacy.checked == 1)
+	{vPharmacy="search19=1&Pharmacy=True"} else {vPharmacy="search19=0&Pharmacy=False"}
+	if (document.fmFindStores.ctl00$StoreSearch1$cbMarketplace.checked == 1)
+	{vMarketplace="search20=1&Marketplace=True"} else {vMarketplace="search20=0&Marketplace=False"}
+
+	vCity = "city="+document.fmFindStores.ctl00$StoreSearch1$txtCity.value;
+	vState = "state="+document.fmFindStores.ctl00$StoreSearch1$ddlState.value;
+	vRadius = "radius="+document.fmFindStores.ctl00$StoreSearch1$ddlRadius.value;
+	vZipCode = "postalCode="+document.fmFindStores.ctl00$StoreSearch1$txtZipCode.value+"&ZipCode="+document.fmFindStores.ctl00$StoreSearch1$txtZipCode.value;
+
+	fsFullURL = "http://services.kroger.com/mapquest/storelocatorresults.aspx?"+ vFuel + "&" + vPharmacy + "&" + vMarketplace + "&" + vRadius + "&" + vCity + "&" + vState + "&" + vZipCode;
+	location.href=fsFullURL;
+}
+  
+  
+   
+ </script>   
+    
+</head>
+<body onLoad="document.getElementById('name').value=''">
+ <div id="main">
+<!-- Begin Store Locator Overlay -->
+				<div id="storeLocatorHeader">
+					<div class="body">
+						<div class="dottedHeader">
+							<h2 class="floatLeft">Find Stores</h2>
+							<span class="smallTextHeaderRight"><a href="#" onclick="javascript:toggleHiddenLayer('storeLocatorHeader');">Close</a>&nbsp;<a href="#" onclick="javascript:toggleHiddenLayer('storeLocatorHeader');"><img id="btnClose" src="index_files/form_btn_close.gif" alt="Close" border="0"></a></span>
+						</div>
+						<div class="clear"></div>
+						<p>Please enter the your ZIP code or city/state.</p>
+						<form name="fmFindStores" action="javascript:findStores();">
+						<p><strong>ZIP Code:</strong>
+						<input name="ctl00$StoreSearch1$txtZipCode" id="ctl00_StoreSearch1_txtZipCode" type="text">
+						</p>
+						<p align="center">OR</p>
+						<p><strong>City:</strong>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+						<input name="ctl00$StoreSearch1$txtCity" id="ctl00_StoreSearch1_txtCity" type="text">
+						</p>
+						<p>
+						<strong>State:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<select name="ctl00$StoreSearch1$ddlState" id="ctl00_StoreSearch1_ddlState">
+						<option selected="selected" value="">Select State</option>
+						<option value="AL">Alabama</option>
+						<option value="AK">Alaska</option>
+						<option value="AZ">Arizona</option>
+						<option value="AR">Arkansas</option>
+						<option value="CA">California</option>
+						<option value="CO">Colorado</option>
+						<option value="CT">Connecticut</option>
+						<option value="DE">Delaware</option>
+						<option value="DC">District of Columbia</option>
+						<option value="FL">Florida</option>
+						<option value="GA">Georgia</option>
+						<option value="HI">Hawaii</option>
+						<option value="ID">Idaho</option>
+						<option value="IL">Illinois</option>
+						<option value="IN">Indiana</option>
+						<option value="IA">Iowa</option>
+						<option value="KS">Kansas</option>
+						<option value="KY">Kentucky</option>
+						<option value="LA">Louisiana</option>
+						<option value="ME">Maine</option>
+						<option value="MD">Maryland</option>
+						<option value="MA">Massachusetts</option>
+						<option value="MI">Michigan</option>
+						<option value="MN">Minnesota</option>
+						<option value="MS">Mississippi</option>
+						<option value="MO">Missouri</option>
+						<option value="MT">Montana</option>
+						<option value="NE">Nebraska</option>
+						<option value="NV">Nevada</option>
+						<option value="NH">New Hampshire</option>
+						<option value="NJ">New Jersey</option>
+						<option value="NM">New Mexico</option>
+						<option value="NY">New York</option>
+						<option value="NC">North Carolina</option>
+						<option value="ND">North Dakota</option>
+						<option value="OH">Ohio</option>
+						<option value="OK">Oklahoma</option>
+						<option value="OR">Oregon</option>
+						<option value="PA">Pennsylvania</option>
+						<option value="RI">Rhode Island</option>
+						<option value="SC">South Carolina</option>
+						<option value="SD">South Dakota</option>
+						<option value="TN">Tennessee</option>
+						<option value="TX">Texas</option>
+						<option value="UT">Utah</option>
+						<option value="VT">Vermont</option>
+						<option value="VA">Virginia</option>
+						<option value="WA">Washington</option>
+						<option value="WV">West Virginia</option>
+						<option value="WI">Wisconsin</option>
+						<option value="WY">Wyoming</option>
+						</select>
+						</p>
+						&nbsp;
+						<h4>Only show stores with:</h4>
+						<input id="ctl00_StoreSearch1_cbFuel" name="ctl00$StoreSearch1$cbFuel" type="checkbox"><label for="ctl00_StoreSearch1_cbFuel">Fuel Center</label><br>
+						<input id="ctl00_StoreSearch1_cbPharmacy" name="ctl00$StoreSearch1$cbPharmacy" type="checkbox"><label for="ctl00_StoreSearch1_cbPharmacy">Pharmacy</label><br>
+						<input id="ctl00_StoreSearch1_cbMarketplace" name="ctl00$StoreSearch1$cbMarketplace" type="checkbox"><label for="ctl00_StoreSearch1_cbMarketplace">Marketplace</label><br>
+
+						<label>Show stores within a</label>
+						<select name="ctl00$StoreSearch1$ddlRadius" id="ctl00_StoreSearch1_ddlRadius">
+						<option selected="selected" value="10">10 mile</option>
+						<option value="20">20 mile</option>
+						<option value="30">30 mile</option>
+						<option value="40">40 mile</option>
+						<option value="50">50 mile</option>
+						</select>
+						<label>radius.</label>
+						<div class="clear"></div>
+						<div class="floatLeft"><input src="index_files/form_btn_search.gif" name="ctl00$StoreSearch1$imgBtn" id="ctl00_StoreSearch1_imgBtn" type="image"></div>
+						<div class="floatRight"><a href="http://services.smithsfoodanddrug.com/StoreLocator/StoreLocatorAdvanced.aspx">Advanced Search</a></div>
+						</form>
+					</div>
+				</div>
+			<!-- End Store Locator Overlay -->
+            <div id="grayBlock">
+                <!-- Header -->
+                <div id="header">
+                    <div id="branding">
+                        <a href="http://www.kroger.com/"><img src="index_files/kroger_banner_logo_header.gif" title="Kroger | Expressions from Hallmark - Spring 2012" alt="Kroger | Expressions from Hallmark - Spring 2012 logo"></a>
+                                            </div>
+
+<!--Begin Kroger Hosted Utility Navigation -->
+<div id="utilityNav">
+<script type="text/javascript" src="index_files/kroger_nav_utility.js"></script><ul><li id="item1"><a href="http://services.kroger.com/StoreLocator/StoreLocatorWeeklyAdSearch.aspx"><img src="index_files/hdr_weeklyAds.gif" id="ctl00_Img13" alt="image" title="Weekly Ads"></a></li><li id="item2"><a href="#" onclick="javascript:toggleHiddenLayer('storeLocatorHeader');"><img src="index_files/hdr_findStores.gif" id="ctl00_Img14" alt="image" title="Store Locator"></a></li><li id="item3"><a href="http://www.kroger.com/pharmacy/Pages/order_refills.aspx"><img src="index_files/hdr_RxRefills.gif" id="ctl00_Img15" alt="image" title="Rx Refills"></a></li><li id="item4"><a href="http://www.kroger.com/mykroger"><img src="index_files/hdr_myBanner.gif" id="ctl00_Img16" alt="image" title="My Kroger"></a></li></ul>
+</div>
+<!--End Kroger Hosted Utility Navigation -->
+</div>
+
+<!--Begin Kroger Hosted Global Navigation -->
+<ul id="nav">
+<script type="text/javascript" src="index_files/kroger_nav_global.js"></script><li class="pipe" id="mainNav_pipe1"></li><li id="mainNav_item1"><a href="http://www.kroger.com/" class="main"><img src="index_files/mainNav_Home.gif" id="ctl00_Img1" alt="image" title="Home"></a></li><li class="pipe" id="mainNav_pipe2"></li><li id="mainNav_item2"><a href="http://www.kroger.com/great_meals" class="main"><img src="index_files/mainNav_Great_Meals.gif" id="ctl00_Img2" alt="image" title="Great Meals"></a><ul id="mainNav_item2-menu" class="hide"><li><a href="http://www.kroger.com/great_meals/recipes/Pages/default.aspx">Recipes</a></li><li><a href="http://www.kroger.com/great_meals/party_planning/Pages/default.aspx">Party Planning</a></li><li><a href="http://www.kroger.com/great_meals/safe_food_preparation/Pages/default.aspx">Safe Food Preparation</a></li><li><a href="http://www.kroger.com/great_meals/party_trays/Pages/default.aspx">Party Trays</a></li><li><a href="http://www.krogerbeerevents.com/">Beer</a></li><li><a href="http://www.krogerwineevents.com/">Wine</a></li><li><a href="http://krogerspiritevents.com/">Spirits</a></li></ul></li><li class="pipe" id="mainNav_pipe3"></li><li id="mainNav_item3"><a href="http://www.kroger.com/healthy_living" class="main"><img src="index_files/mainNav_Healthy_Living.gif" id="ctl00_Img3" alt="image" title="Healthy Living"></a><ul id="mainNav_item3-menu" class="hide"><li><a href="http://kroger.staywellsolutionsonline.com/">Health Guide</a></li><li><a href="http://www.kroger.com/pharmacy/Pages/the_little_clinic.aspx">The Little Clinic</a></li><li><a href="http://www.kroger.com/healthy_living/family/Pages/default.aspx">Home &amp; Family</a></li><li><a href="http://www.kroger.com/healthy_living/fitness_nutrition/Pages/default.aspx">Fitness &amp; Nutrition</a></li><li><a href="http://www.kroger.com/healthy_living/green_living/Pages/default.aspx">Green Living</a></li><li><a href="http://www.kroger.com/healthy_living/gluten_free/Pages/default.aspx">Gluten Free</a></li></ul><iframe id="mainNav_item3-shim" class="navShim" src="javascript:false;" frameborder="0" scrolling="no"></iframe></li><li class="pipe" id="mainNav_pipe4"></li><li id="mainNav_item4"><a href="http://www.kroger.com/fresh_foods" class="main"><img src="index_files/mainNav_Fresh_Foods.gif" id="ctl00_Img4" alt="image" title="Fresh Foods"></a><ul id="mainNav_item4-menu" class="hide"><li><a href="http://www.kroger.com/fresh_foods/deli_bakery/Pages/default.aspx">Deli &amp; Bakery</a></li><li><a href="http://www.kroger.com/fresh_foods/fruits_veggies/Pages/default.aspx">Fruits &amp; Veggies</a></li><li class="noBorder"><a href="http://www.kroger.com/fresh_foods/meat_seafood/Pages/default.aspx">Meat &amp; Seafood</a></li></ul><iframe id="mainNav_item4-shim" class="navShim" src="javascript:false;" frameborder="0" scrolling="no"></iframe></li><li class="pipe" id="mainNav_pipe5"></li><li id="mainNav_item5"><a href="http://www.kroger.com/gift_center" class="main"><img src="index_files/mainNav_Gift_Center.gif" id="ctl00_Img5" alt="image" title="GiftCenter"></a><ul id="mainNav_item5-menu" class="hide"><li><a href="http://www.kroger.com/gift_center/gc/Pages/default.aspx">Buy Gift Cards</a></li><li><a href="http://ftdfloristsonline.com/kroger">Flowers</a></li><li><a href="http://www.kroger.com/gift_center/Pages/gourmet_gifts.aspx">Gourmet Gifts</a></li><li><a href="http://www.kroger.com/gift_center/Pages/jewelry.aspx">Fred Meyer Jewelers</a></li></ul><iframe id="mainNav_item5-shim" class="navShim" src="javascript:false;" frameborder="0" scrolling="no"></iframe></li><li class="pipe" id="mainNav_pipe6"></li><li id="mainNav_item6"><a href="http://www.kroger.com/services" class="main"><img src="index_files/mainNav_Services.gif" id="ctl00_Img6" alt="image" title="Services"></a><ul id="mainNav_item6-menu" class="hide"><li><a href="http://www.kroger.com/services/Pages/recall_information.aspx">Recall Information</a></li><li><a href="http://www.kroger.com/services/finance/Pages/default.aspx">1-2-3 REWARDS® Visa®</a></li><li><a href="http://www.kroger.com/services/finance/debit/Pages/default.aspx">Visa® Prepaid Debit Card</a></li><li><a href="http://www.kroger.com/services/Pages/specialty_grocery.aspx">Specialty Grocery</a></li><li><a href="http://www.kroger.com/services/Pages/school_programs.aspx">School Programs</a></li><li><a href="http://www.kroger.com/services/Pages/phone_services.aspx">Phone Services</a></li><li><a href="http://www.kroger.com/services/Pages/partners.aspx">Partners</a></li><li><a href="http://www.communitygifts.com/kroger">Request a Donation</a></li><li><a href="http://www.kroger.com/mykroger/Pages/community_rewards.aspx">Community Rewards</a></li></ul></li><li class="pipe" id="mainNav_pipe7"></li><li id="mainNav_item7"><a href="http://www.kroger.com/pharmacy" class="main"><img src="index_files/mainNav_Pharmacy.gif" id="ctl00_Img7" alt="image" title="Pharmacy"></a><ul id="mainNav_item7-menu" class="hide"><li><a href="http://www.kroger.com/pharmacy/Pages/order_prescriptions.aspx">Prescriptions</a></li><li><a href="http://www.kroger.com/generic/">Generic Program</a></li><li><a href="http://www.kroger.com/pharmacy/Pages/vaccinations.aspx">Vaccinations</a></li><li><a href="http://www.kroger.com/pharmacy/Pages/travel_vaccinations.aspx/">Travel Vaccinations</a></li><li><a href="http://www.kroger.com/pharmacy/Pages/drug_information.aspx">Drug Information</a></li><li><a href="http://www.kroger.com/pharmacy/Pages/medical_forms.aspx">Medical Forms</a></li><li><a href="http://www.kpp-rx.com/">Prescription Drug Plans</a></li><li><a href="http://www.kroger.com/pharmacy/Pages/the_little_clinic.aspx">The Little Clinic</a></li><li><a href="http://www.kroger.com/pharmacy/Pages/medicare_plans.aspx">Medicare Plans</a></li><li><a href="http://www.kroger.com/pharmacy/Pages/workplace_flu.aspx">Workplace Flu</a></li><li><a href="http://www.kroger.com/pharmacy/Pages/medication_disposal.aspx">How to Dispose of Unused Medicines</a></li></ul></li><li class="pipe" id="mainNav_pipe8"></li><li id="mainNav_item8"><a href="http://www.kroger.com/in_store/Pages/default.aspx" class="main"><img src="index_files/mainNav_In_Store.gif" id="ctl00_Img8" alt="image" title="In Store"></a><ul id="mainNav_item8-menu" class="hide"><li><a href="http://www.kroger.com/in_store/Pages/coupon_landing.aspx">Coupons</a></li><li><a href="http://www.kroger.com/in_store/Pages/savings.aspx">Savings</a></li><li><a href="http://www.kroger.com/in_store/Pages/promotions.aspx">Promotions</a></li><li><a href="http://www.kroger.com/in_store/fuel/Pages/default.aspx">Save on Fuel</a></li><li><a href="http://www.kroger.com/in_store/corporate_brands/Pages/default.aspx">Our Exclusive Brands</a></li><li><a href="http://www.startsampling.com/retail/kroger/">Samples</a></li><li><a href="http://www.kroger.com/IN_STORE/NEW_PRODUCTS/Pages/default.aspx">New Products</a></li><li><a href="http://services.kroger.com/mapquest/storesearchadvanced.aspx">Weekly Ads</a></li></ul></li><li class="pipe" id="mainNav_pipe9"></li><li id="mainNav_item9"><a href="#" class="main"><img src="index_files/mainNav_SeeAll.gif" id="ctl00_Img12" alt="image" title="See All"></a><div id="mainNav_item9-menu" class="hide"><div class="body"><div class="columnEntry"><ul><li><a href="http://www.kroger.com/company_information/Pages/default.aspx" class="header">Company Information</a></li><li><a href="http://www.thekrogerco.com/">About The Kroger Co.</a></li><li><a href="http://www.thekrogerco.com/corpnews/corpnewsinfo.htm">Company News</a></li><li><a href="http://www.thekrogerco.com/finance/financialinfo.htm">Investor Relations</a></li><li><a href="http://www.thekrogerco.com/finance/financialinfo_reportsandstatements.htm">SEC Filings</a></li><li><a href="http://www.kroger.com/company_information/community/Pages/default.aspx">Community</a></li><li><a href="http://www.krogerrealestate.com/">Kroger Real Estate</a></li><li><a href="http://www.kroger.com/company_information/jobs/Pages/default.aspx">Jobs</a></li><li><a href="https://ess.kroger.com/">Associates</a></li><li><span>&nbsp;</span></li><li class="noBorder"><span>&nbsp;</span></li></ul></div><div class="columnEntry"><ul><li><a href="http://www.kroger.com/fresh_foods" class="header">Fresh Foods</a></li><li><a href="http://www.kroger.com/fresh_foods/deli_bakery/Pages/default.aspx">Deli &amp; Bakery</a></li><li><a href="http://www.kroger.com/fresh_foods/fruits_veggies/Pages/default.aspx">Fruits &amp; Veggies</a></li><li><a href="http://www.kroger.com/fresh_foods/meat_seafood/Pages/default.aspx">Meat &amp; Seafood</a></li><li><span>&nbsp;</span></li><li class="noBorder"><span>&nbsp;</span></li></ul></div><div class="columnEntry"><ul><li><a href="http://www.kroger.com/great_meals" class="header">Great Meals</a></li><li><a href="http://www.kroger.com/great_meals/recipes/Pages/default.aspx">Recipes</a></li><li><a href="http://www.kroger.com/great_meals/party_planning/Pages/default.aspx">Party Planning</a></li><li><a href="http://www.kroger.com/great_meals/safe_food_preparation/Pages/default.aspx">Safe Food Preparation</a></li><li><a href="http://www.kroger.com/great_meals/party_trays/Pages/default.aspx">Party Trays</a></li><li><a href="http://www.krogerbeerevents.com/">Beer</a></li><li><a href="http://www.krogerwineevents.com/">Wine</a></li><li><a href="http://krogerspiritevents.com/">Spirits</a></li><li><span>&nbsp;</span></li><li class="noBorder"><span>&nbsp;</span></li></ul></div><div class="columnEntry"><ul><li><a href="http://www.kroger.com/healthy_living" class="header">Healthy Living</a></li><li><a href="http://kroger.staywellsolutionsonline.com/">Health Guide</a></li><li><a href="http://www.kroger.com/pharmacy/Pages/the_little_clinic.aspx">The Little Clinic</a></li><li><a href="http://www.kroger.com/healthy_living/family/Pages/default.aspx">Home &amp; Family</a></li><li><a href="http://www.kroger.com/healthy_living/fitness_nutrition/Pages/default.aspx">Fitness &amp; Nutrition</a></li><li><a href="http://www.kroger.com/healthy_living/green_living/Pages/default.aspx">Green Living</a></li><li><a href="http://www.kroger.com/healthy_living/gluten_free/Pages/default.aspx">Gluten Free</a></li><li><span>&nbsp;</span></li><li class="noBorder"><span>&nbsp;</span></li></ul></div><div class="columnEntryLast"><ul><li><a href="http://www.kroger.com/help/Pages/default.aspx" class="header">Help</a></li><li><a href="http://www.kroger.com/help/Pages/contact_us.aspx">Contact Us</a></li><li><a href="https://customer.kroger.com/comments/comments.aspx">Customer Comments</a></li><li><a href="http://recipes.kroger.com/faqs/browse.aspx">FAQs</a></li><li><a href="http://www.kroger.com/help/Pages/site_map.aspx">Site Map</a></li><li><span>&nbsp;</span></li><li class="noBorder"><span>&nbsp;</span></li></ul></div><div class="clear"></div><div class="columnEntry"><ul><li><a href="http://www.kroger.com/pharmacy" class="header">Pharmacy</a></li><li><a href="http://www.kroger.com/pharmacy/Pages/order_prescriptions.aspx">Prescriptions</a></li><li><a href="http://www.kroger.com/generic/">Generic Program</a></li><li><a href="http://www.kroger.com/pharmacy/Pages/vaccinations.aspx">Vaccinations</a></li><li><a href="http://www.kroger.com/pharmacy/Pages/travel_vaccinations.aspx/">Travel Vaccinations</a></li><li><a href="http://www.kroger.com/pharmacy/Pages/drug_information.aspx">Drug Information</a></li><li><a href="http://www.kroger.com/pharmacy/Pages/medical_forms.aspx">Medical Forms</a></li><li><a href="http://www.kpp-rx.com/">Prescription Drug Plans</a></li><li><a href="http://www.kroger.com/pharmacy/Pages/the_little_clinic.aspx">The Little Clinic</a></li><li><a href="http://www.kroger.com/pharmacy/Pages/medicare_plans.aspx">Medicare Plans</a></li><li><a href="http://www.kroger.com/pharmacy/Pages/workplace_flu.aspx">Workplace Flu</a></li><li><a href="http://www.kroger.com/pharmacy/Pages/medication_disposal.aspx">How to Dispose of Unused Medicines</a></li><li class="noBorder"><span>&nbsp;</span></li></ul></div><div class="columnEntry"><ul><li><a href="http://www.kroger.com/services" class="header">Services</a></li><li><a href="http://www.kroger.com/services/Pages/recall_information.aspx">Recall Information</a></li><li><a href="http://www.kroger.com/services/finance/Pages/default.aspx">1-2-3 REWARDS® Visa®</a></li><li><a href="http://www.kroger.com/services/finance/debit/Pages/default.aspx">Visa® Prepaid Debit Card</a></li><li><a href="http://www.kroger.com/services/Pages/specialty_grocery.aspx">Specialty Grocery</a></li><li><a href="http://www.kroger.com/services/Pages/school_programs.aspx">School Programs</a></li><li><a href="http://www.kroger.com/services/Pages/phone_services.aspx">Phone Services</a></li><li><a href="http://www.kroger.com/services/Pages/partners.aspx">Partners</a></li><li><a href="http://www.communitygifts.com/kroger">Request a Donation</a></li><li><a href="http://www.kroger.com/mykroger/Pages/community_rewards.aspx">Community Rewards</a></li><li class="noBorder"><span>&nbsp;</span></li></ul></div><div class="columnEntry"><ul><li><a href="http://www.kroger.com/gift_center" class="header">Gift Center</a></li><li><a href="http://www.kroger.com/gift_center/gc/Pages/default.aspx">Buy Gift Cards</a></li><li><a href="http://ftdfloristsonline.com/kroger">Flowers</a></li><li><a href="http://www.kroger.com/gift_center/Pages/gourmet_gifts.aspx">Gourmet Gifts</a></li><li><a href="http://www.kroger.com/gift_center/Pages/jewelry.aspx">Fred Meyer Jewelers</a></li><li class="noBorder"><span>&nbsp;</span></li></ul></div><div class="columnEntry"><ul><li><a href="http://www.kroger.com/stores/Pages/default.aspx" class="header">Stores</a></li><li><a href="http://services.kroger.com/StoreLocator/StoreLocatorAdvanced.aspx">Store Locator</a></li><li><a href="http://services.kroger.com/StoreLocator/StoreLocatorWeeklyAdSearch.aspx">Weekly Ads</a></li><li><a href="http://www.kroger.com/stores/our_exclusive_brands/Pages/our_exclusive_brands.aspx">Our Exclusive Brands</a></li><li class="noBorder"><span>&nbsp;</span></li></ul></div><div class="columnEntryLast"><ul><li><a href="http://www.kroger.com/in_store/Pages/default.aspx" class="header">In Store</a></li><li><a href="http://www.kroger.com/in_store/Pages/coupon_landing.aspx">Coupons</a></li><li><a href="http://www.kroger.com/in_store/Pages/savings.aspx">Savings</a></li><li><a href="http://www.kroger.com/in_store/Pages/promotions.aspx">Promotions</a></li><li><a href="http://www.kroger.com/in_store/corporate_brands/Pages/default.aspx">Our Exclusive Brands</a></li><li><a href="http://www.startsampling.com/retail/kroger/">Samples</a></li><li><a href="http://www.kroger.com/IN_STORE/FUEL/Pages/default.aspx">Save on Fuel</a></li><li><a href="http://www.kroger.com/IN_STORE/NEW_PRODUCTS/Pages/default.aspx">New Products</a></li><li><a href="http://services.kroger.com/StoreLocator/StoreLocatorWeeklyAdSearch.aspx">Weekly Ads</a></li><li class="noBorder"><span>&nbsp;</span></li></ul></div></div></div></li><li class="pipe" id="mainNav_pipe10"></li>
+</ul>
+<!--End Kroger Hosted Global Navigation -->
+
+<!-- CONTENT START !-->
+<div id="contentBox">
+	  
+	  		<div id="content">
+       	  
+        	<p style="font-family:Arial, Helvetica, sans-serif; font-size:22pt; font-weight:bold; color:#d0192d; text-align:left;">GIVE THE TREAT THAT GIVES BACK.<br />
+		HELP SUPPORT CANINE ASSISTANTS.</p>
+            <p style="font-family:Arial, Helvetica, sans-serif; font-size:9pt; color:#636363; display:block; width: 525px; padding-left:10px; text-align:center;">For 13 years and counting, every time you buy Milk-Bone&reg; dog snacks, a portion of the proceeds goes to help the Canine Assistants&reg; organization. Milk-Bone&reg; and Kroger have partnered up to help provide these service dogs to people in the Kroger community who need them. <strong>Together, we're proud to help change more lives.</strong></p>
+            <p style="font-family:Arial, Helvetica, sans-serif; font-size:11pt; color: #d0192d;">HOW YOU CAN HELP:<span style="font-family:Arial, Helvetica, sans-serif; font-size: 9pt; color: #636363;"> Save up to $1.00 on Milk-Bone&reg; dog snacks by pledging 	your support below. </span></p>
+            
+            <form>
+            	<input id="name" type="text" class="textBG" />
+            	<br />
+            	<input name="Submit" type="submit" class="button" value="PLEDGE &amp; SAVE" />  
+            </form>
+            
+            <div id="milkbone">
+            	<div class="letters"></div>	
+            </div>
+            
+            <script src="http://code.jquery.com/jquery-latest.js"></script>
+				<script>
+					$("#name").keypress(function(e) {
+					// if (e.which < 97 || e.which > 122)  // 97=a, 122=z
+					var letter = '<img class="letter" src="letters/'+(e.which)+'.png">';
+					$('div.letters').append(letter);
+  					//alert(letter);
+					});
+				</script>
+				
+			<div id="jar">
+            	<!-- JAR CONTENT !-->
+            </div>
+			<div id="legal">
+             		&copy: Del Monte Corporation. All Rights Reserved. 
+				</div>
+				<div id="facebook">
+					<iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fitsgoodtogivemilkbone&amp;width=270&amp;height=82&amp;colorscheme=light&amp;show_faces=false&amp;border_color&amp;stream=false&amp;header=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:270px; height:82px;" allowTransparency="true"></iframe>				
+				</div>
+							
+            <!-- END CONTENT !-->
+            </div>
+	  
+ 	<div align="center">
+ 
+<div class="vc524_wrapper">
+	
+	<style type="text/css">
+	<!--
+	.vc524_wrapper { position: relative; display: block; width: 940px; height: 704px; overflow: none; padding: 0; margin: 0; } #vc524_tp3_package { /* display: none; */ position: relative; /* display: block; */ width: 940px; height: 821px; background: url('images/vc524_tp3.jpg') no-repeat; } #vc524_any_day_card_package { position: relative; /* display: block; */ width: 940px; height: 821px; background: url('images/vc524_any_day_card.jpg') no-repeat; } #vc524_blooming_expressions_package { position: relative; /* display: block; */ width: 940px; height: 821px; background: url('images/vc524_blooming_expressions.jpg') no-repeat; } #vc524_bloom_demo_package { position: relative; /* display: block; */ width: 940px; height: 821px; background: url('images/vc524_bloom_demo.jpg') no-repeat; } #vc524_tell_me_tv_package { position: relative; /* display: block; */ width: 940px; height: 821px; background: url('images/vc524_tell_me_tv.jpg') no-repeat; } .vc524_top_banner { display: block; bottom: 0; right: 0; width: 100%; height: 93px; /* border: 1px solid red; */ } .vc524_ul { position: relative; width: 850px; top: 100px; left: 71px; margin: 0; padding: 0; line-height: 1; } .vc524_ul li { list-style: none; float: left; } .vc524_ul li a { display: block; width: 380px; height: 237px; margin: 0 40px 40px 0; /* border: 1px solid red; */ } .vc524_ul li a.vc524_tell_me_tv { height: 247px; margin-left: 205px; } .vc524_watch_it_bloom { position: absolute; display: block; float: left; top: 575px; left: 94px; width: 150px; height: 30px; /* border: 1px solid red; */ } .vc524_bloom_video_embed_goes_here { position: absolute; display: block; float: left; top: 295px; left: 405px; /* width: 485px; height: 340px; border: 1px solid red; */ } .vc524_tell_me_video_embed_goes_here { position: absolute; display: block; float: left; top: 295px; left: 365px; /* width: 530px; height: 340px; border: 1px solid red; */ } .vc524_back { position: absolute; display: block; float: left; bottom: 0; left: 0; width: 97px; height: 30px; /* border: 1px solid red; */ } .vc524_licensing_info { position: absolute; display: block; float: right; bottom: 0; right: 0; width: 82px; height: 22px; /* border: 1px solid red; */ }
+	-->
+	</style>
+	
+	<div style="display: none;" class="vc524_package" id="vc524_any_day_card_package"><a href="javascript:vc524_show_package('vc524_tp3_package');" class="vc524_top_banner"></a><a href="javascript:vc524_show_package('vc524_tp3_package');" class="vc524_back">
+			
+			<!--
+			show #vc524_tp4_package
+			-->
+			
+			</a></div>
+	
+	<!--
+	end #vc524_any_day_card_package
+	-->
+	
+	
+	
+	<div style="display: none;" class="vc524_package" id="vc524_blooming_expressions_package"><a href="javascript:vc524_show_package('vc524_tp3_package');" class="vc524_top_banner"></a><a href="javascript:vc524_show_package('vc524_bloom_demo_package');" class="vc524_watch_it_bloom">
+			
+			<!--
+			show #vc524_bloom_demo_package
+			-->
+			
+			</a><a href="javascript:vc524_show_package('vc524_tp3_package');" class="vc524_back">
+			
+			<!--
+			show #vc524_tp4_package
+			-->
+			
+			</a></div>
+	
+	<!--
+	end #vc524_blooming_expressions_package
+	-->
+	
+	
+	
+	<div style="display: none;" class="vc524_package" id="vc524_bloom_demo_package"><a href="javascript:vc524_show_package('vc524_tp3_package');" class="vc524_top_banner"></a>
+		
+		<div class="vc524_bloom_video_embed_goes_here">
+			
+			<!--
+			video embed goes here
+			-->
+			
+			
+			
+			<iframe allowfullscreen="" src="index_files/M8pME4vhJAs.html" frameborder="0" height="287" width="505"></iframe></div><a href="javascript:vc524_show_package('vc524_blooming_expressions_package');" class="vc524_back">
+			
+			<!--
+			show #vc524_blooming_expressions_package
+			-->
+			
+			</a></div>
+	
+	<!--
+	end #vc524_bloom_demo_package
+	-->
+	
+	
+	
+	<div style="display: none;" class="vc524_package" id="vc524_tell_me_tv_package"><a href="javascript:vc524_show_package('vc524_tp3_package');" class="vc524_top_banner"></a>
+		
+		<div class="vc524_tell_me_video_embed_goes_here">
+			
+			<!--
+			video embed goes here
+			-->
+			
+			
+			
+			<iframe allowfullscreen="" src="index_files/n-18CCzXTH4.html" frameborder="0" height="315" width="560"></iframe></div><a href="javascript:vc524_show_package('vc524_tp3_package');" class="vc524_back">
+			
+			<!--
+			show #vc524_tp4_package
+			-->
+			
+			</a></div>
+	
+	<!--
+	end #vc524_tell_me_tv_package
+	-->
+	
+	
+	
+	<script src="index_files/jquery.js" type="text/javascript">
+	
+	</script>
+	
+	<script type="text/javascript">
+	jQuery.noConflict(); function vc524_debug(val) { if(typeof(window.console) != 'undefined' && typeof(window.console.log) != 'undefined') window.console.log(val); } function vc524_show_package( package_id ) { jQuery('.vc524_package').css('display','none'); jQuery('#'+package_id).toggle(); } vc524_show_package('vc524_tp3_package');
+	</script></div>
+
+<!--
+end .vc524_wrapper
+-->
+
+  </div>
+<!-- End ADS-->      
+        
+        
+        
+    <div id="boxBottom"></div>
+                <!-- kill 2 col for 1 col --> </div> 
+
+<div id="footer">
+
+			<!-- Begin 10/12/07 Update #2 -->
+			<div id="emailSignup">
+			<div class="body">
+			<p class="header">Special Offers &amp; Promotions</p>
+			<p>Sign up to receive our monthly newsletter.</p>
+			<span id="submit"><a href="http://customer.kroger.com/"><img src="index_files/footer_goBtn.gif" alt="Go!" title="Go!"></a></span>
+			<div class="clear"></div>
+			</div>
+			</div>
+			<!-- End 10/12/07 Update #2 -->
+
+<!--Begin Kroger Hosted Footer Navigation -->
+<script type="text/javascript" src="index_files/kroger_nav_footer.js"></script><div id="navList1"><ul><li><a href="http://www.kroger.com/company_information/Pages/default.aspx" class="header">Company Information</a></li><li><a href="http://www.thekrogerco.com/">About The Kroger Co.</a></li><li><a href="http://www.thekrogerco.com/corpnews/corpnewsinfo.htm">Company News</a></li><li><a href="http://www.thekrogerco.com/finance/financialinfo.htm">Investor Relations</a></li><li><a href="http://www.thekrogerco.com/finance/financialinfo_reportsandstatements.htm">SEC Filings</a></li><li><a href="http://www.kroger.com/company_information/community/Pages/default.aspx">Community</a></li><li><a href="http://www.krogerrealestate.com/">Kroger Real Estate</a></li><li><a href="http://www.kroger.com/company_information/careers/Pages/default.aspx">Careers/Jobs</a></li><li><a href="https://ess.kroger.com/">Express HR/Associates</a></li></ul></div><div id="navList2"><ul><li><a href="http://www.kroger.com/services/Pages/default.aspx" class="header">Services</a></li><li><a href="http://www.kroger.com/services/Pages/recall_information.aspx">Recall Information</a></li><li><a href="http://www.kroger.com/services/finance/Pages/default.aspx">1-2-3 REWARDS® Visa®</a></li><li><a href="http://www.kroger.com/services/finance/debit/Pages/default.aspx">Visa® Prepaid Debit Card</a></li><li><a href="http://www.kroger.com/services/Pages/specialty_grocery.aspx">Specialty Grocery</a></li><li><a href="http://www.kroger.com/services/Pages/school_programs.aspx">School Programs</a></li><li><a href="http://www.kroger.com/services/Pages/phone_services.aspx">Phone Services</a></li><li><a href="http://www.kroger.com/services/Pages/partners.aspx">Partners</a></li><li><a href="http://www.communitygifts.com/kroger">Request a Donation</a></li><li><a href="http://www.kroger.com/mykroger/Pages/community_rewards.aspx">Community Rewards</a></li></ul></div><div id="navList3"><ul><li><a href="http://www.kroger.com/help/Pages/default.aspx" class="header">Help</a></li><li><a href="http://www.kroger.com/help/Pages/contact_us.aspx">Contact Us</a></li><li><a href="https://customer.kroger.com/comments/comments.aspx">Customer Comments</a></li><li><a href="http://recipes.kroger.com/faqs/browse.aspx">FAQs</a></li><li><a href="http://www.kroger.com/help/Pages/site_map.aspx">Site Map</a></li></ul></div><div id="navList4"><ul><li><a href="http://www.kroger.com/stores/Pages/default.aspx" class="header">Stores</a></li><li><a href="http://services.kroger.com/StoreLocator/StoreLocatorAdvanced.aspx">Store Locator</a></li><li><a href="http://services.kroger.com/StoreLocator/StoreLocatorWeeklyAdSearch.aspx">Weekly Ads</a></li></ul></div>
+<!--End Kroger Hosted Footer Navigation -->
+</div>
+</div>
+            <div class="clear"></div>
+            <!-- Legal info -->
+
+            <!-- Begin 10/12/07 Update #3 -->
+            <div id="legalFooter">
+                <div class="body">
+                    <div>All Comments © Copyright 2009 Kroger | Expressions from Hallmark - Spring 2012 All Rights Reserved</div>
+                    <div><span><a href="http://kroger.com/company_information/Pages/pharmacy_privacy_policy.aspx">Pharmacy Privacy Notice</a></span><span>|</span><span><a href="http://kroger.com/company_information/Pages/terms_conditions.aspx">Terms and Conditions</a></span><span>|</span><span><a href="http://kroger.com/company_information/Pages/privacy_policy.aspx">Privacy Policy</a></span></div>
+                </div>
+            </div>
+			<!-- End 10/12/07 Update #3 -->
+</div>
+<!--RED OLIVE ANALYTICS INCLUSION START -->
+ <!--
+Start of DoubleClick Floodlight Tag: Please do not remove
+Activity name of this tag: HK-InStore Details-Easter
+URL of the webpage where the tag is expected to be placed: http://www.instoredetails.com/index.php
+This tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.
+Creation Date: 03/08/2012
+-->
+<script type="text/javascript">
+var axel = Math.random() + "";
+var a = axel * 10000000000000;
+document.write('<iframe src="http://fls.doubleclick.net/activityi;src=357854;type=hallm716;cat=hk-in791;ord=1;num=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
+</script><iframe src="index_files/activityi.html" style="display:none" frameborder="0" height="1" width="1"></iframe>
+<noscript>
+<iframe src="http://fls.doubleclick.net/activityi;src=357854;type=hallm716;cat=hk-in791;ord=1;num=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>
+</noscript>
+
+<!-- End of DoubleClick Floodlight Tag: Please do not remove --><!--RED OLIVE ANALYTICS INCLUSION END -->
+
+
+
+</body></html>

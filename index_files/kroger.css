@@ -1,0 +1,3142 @@
+﻿html {
+	font-size: 100%;
+}
+
+body {
+    background:#FFFFFF none repeat scroll 0%;
+    color:#252525;
+    font-family: Verdana, sans-serif;
+    font-size: 62.5%;
+}
+
+a:link, a:visited {
+    color:#3873c5;
+	text-decoration:underline;
+	font-weight: bold;
+}
+
+a:hover, a:active {
+    text-decoration:none;
+}
+
+a img 
+{
+    border: none;   
+}
+
+
+h2, h3 {
+	font-weight: bold;
+}
+
+
+h1 {
+	font-size: 2em;
+	color: #1b4f93;
+	font-weight: normal;
+}
+
+h2 {
+	font-size: 1.4em;
+	color: #616161;
+	padding: 10px 0;
+	margin: 0;
+}
+
+h3 {
+	font-size: 1.2em;
+	color: #616161;
+}
+
+h4 {
+	font-size: 1.1em;
+}
+
+h5 
+{
+    font-size: 1em;
+    font-weight: normal;
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+
+
+hr {
+    clear:both;
+    color:#666666;
+}
+
+ul {
+	list-style: none;
+	padding: 5px 0;
+	margin:  0 0 0 12px;
+}
+
+.header 
+{
+    text-align: left;
+    border: none;
+    font-family: Verdana, sans-serif;
+}
+
+.blueArrow li
+{
+    padding: 3px 5px 3px 10px;
+    background: url(../SiteCollectionImages/common/blueListArrow.gif) no-repeat 0 7px;
+}
+
+p, li, td, th {
+	font-size: 1.15em;
+}
+
+.clear {
+    clear:both;
+    display:block;
+    height:0;
+	margin: 0;
+	padding: 0;
+	line-height: 0;
+}
+
+.body {
+	padding: 5px 5px;
+	overflow:hidden;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.floatLeft 
+{
+    float: left;
+}
+
+.floatRight 
+{
+    float: right;
+}
+
+.noTop 
+{
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.smallTextHeaderRight
+{
+    padding:13px 0 0 0;
+    float: right;
+}
+
+tr.alt, tr.alt td
+{
+    background: #f4f4f4;
+}
+
+
+.mini 
+{
+    width: 100px;
+}
+
+.micro 
+{
+    width: 30px;
+}
+
+.showhide 
+{
+ display: none;   
+}
+
+/***
+input, textarea {
+    border:1px solid #666666;
+}
+
+*/
+
+input.textbox{
+	border: none;
+	height: 19px;
+	padding: 0 2px;
+	margin: 0;
+	font-size: 1.25em;
+	float: left;
+	overflow: hidden;
+}
+
+.formField {
+	float: left;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	height: 29px;
+	background: #d8e1e9;
+	margin-right: 5px;
+}
+
+.formField .outerBorder
+
+/*, #layoutCommon .formField .body, #layoutCommon #column1 .formField .body,
+#layoutCommon #column2 .formField .body, #layoutCommon #column3 .formField .body*/ {
+	padding: 3px;
+	margin: 0;
+	overflow: hidden;
+}
+
+.formField .innerWhiteBorder {
+	padding: 1px;
+	margin: 0;
+	overflow: hidden;
+	background: #ffffff;
+}
+
+.formField .innerGrayBorder {
+	padding: 1px;
+	margin: 0;
+	overflow: hidden;
+	background: #666666;
+}
+
+.formLabel {
+	float: left;
+	width: 50px;
+	padding-top: 8px;
+}
+
+.required 
+{
+    color: #6d98d4;
+}
+
+.noBorder, #nav .noBorder {
+    border: none;
+}
+
+label 
+{
+    /*
+	font-family: "Myriad Pro",Geneva,Verdana,sans-serif;
+*/
+	font-weight: bold;
+	color: #616161;
+	font-size: 1em;
+}
+
+select {
+	border: 1px solid #6f8baa;
+}
+.noBorder, #layoutCommon .noBorder {
+    border: none;
+}
+
+ .paginationTop, .paginationBottom
+{
+
+    text-align: right;
+    font-weight: bold;
+}
+
+ .paginationTop {
+    border-top: 1px dotted #ccc;
+ }
+  
+ .paginationBottom 
+ {
+    padding-top: 15px;
+    margin-top: 10px; 
+    border-top: 1px dotted #ccc;
+ }
+ 
+ .cmsToolTip 
+ {
+    padding: 5px;
+    padding-left: 25px;
+    background: #FFE2A8 url(../_layouts/images/info16by16.gif) no-repeat 5px 4px;
+ }
+ 
+  .cmsAlert
+ {
+    padding: 5px;
+    padding-left: 25px;
+    background: #FFE2A8 url(../_layouts/images/attention16by16.gif) no-repeat 5px 4px;
+ }
+    
+#main {
+    margin:auto;
+    padding:0;
+    width:960px;
+	background: #ffffff;
+	overflow: visible;
+	position: relative;
+}
+
+#grayBlock 
+{    
+	background: #f3f3f3;
+	overflow: hidden;
+	width: 960px;
+	float: left;
+}
+
+#header {
+    background: url(../SiteCollectionImages/common/header_bg.gif) repeat-x top left;
+    overflow: hidden;
+    width: 100%;
+    height: 80px;
+    padding: 0;
+    margin: 0;
+    clear: both;
+}
+
+#branding {
+    float:left;
+    width:250px;
+    background: transparent;
+}
+
+#branding a {
+	padding: 0 0 0 41px;
+}
+
+#spsWebPartConsole, #spsEditConsole 
+{
+    overflow: hidden;
+    display: none;
+}
+
+#spsWebPartConsole 
+{
+    float: right;
+    width: 200px;
+    height: 800px;
+    background: #3774C4;
+}
+
+#spsEditConsole 
+{
+    background: #E4ECF7;
+    height: 100px;
+    width: 960px;
+}
+
+/******************************************************************
+Row for Search Box and User Info. Nav
+******************************************************************/
+#searchAndUserNav {
+	padding: 0;
+	margin: 0;
+	background: url(../SiteCollectionImages/common/search_userInfo_bg.gif) repeat-x top left;
+	height: 57px;
+}
+
+
+/******************************************************************
+Search Area
+******************************************************************/
+
+#searchBar {
+	font-weight: bold;
+	float: left;
+	width: 625px;
+	height: 57px;
+}
+
+#searchBar .body {
+	padding: 20px 0 5px 40px;
+}
+
+#searchBar .formField .body {
+	padding: 3px;
+	text-align: center;
+}
+
+#searchBar p {
+	margin: 2px 0;
+	padding: 0;
+}
+
+#searchBar select {
+	margin: 0;
+	margin-top: 3px;
+	height: 20px;
+	overflow: hidden;
+	font-size: 1.1em;
+}
+
+#searchBar #searchTerm {
+	width: 200px;
+	margin: 0;
+	overflow: hidden;
+}
+
+#searchBar input.goButton {
+	border: none;
+}
+
+#searchBar .go, #bodySearchHeader .go {
+	padding: 0;
+	margin: 0;
+	width: 32px;
+	height: 29px;
+	float:left;
+}
+
+#searchBar .dropDown {
+	float: left;
+	width: 120px;
+}
+
+/******************************************************************
+User Info in Header
+******************************************************************/
+
+#userInfoHeader {
+	overflow: hidden;
+	width: 300px;
+	float: left;
+	height: 57px;
+	font-size: 1em;
+}
+
+#userInfoHeader .body {
+	padding: 20px 5px 0 5px;
+}
+
+#userInfoHeader h2 {
+	display:inline;
+	padding: 0 10px 0 0;
+	color: #3774c4;
+	margin: 0;
+}
+
+#userInfoHeader span {
+	font-weight: normal;
+	font-size: 1em;
+
+}
+
+#userInfoHeader .details {
+	float: left;
+	border-left: 1px solid #cccccc;
+	
+}
+
+#userInfoHeader a {
+	color: #3774c4;
+	font-weight: bold;
+}
+
+#userInfoHeader a:link, #userInfoHeader a:visited {
+	text-decoration: underline;
+}
+
+#userInfoHeader a:active, #userInfoHeader a:hover {
+	text-decoration: none;	
+}
+
+#userInfoHeader .details div {
+	padding: 2px 10px;
+}
+
+
+/*****************************************************************
+Top right nav in header
+*****************************************************************/
+
+#utilityNav {
+	padding: 0;
+	margin: 0;
+	float: right;
+	width: 490px;
+	background: transparent;
+	position: relative;
+}
+
+#utilityNav ul {
+	list-style: none;
+	margin: 0;
+	padding: 23px 10px 0 0;
+	text-align:right;
+}
+
+#utilityNav li {
+	display: inline;
+	margin: 0 0 0 6px;
+	padding: 0;
+}
+
+#utilityNav a {
+	text-transform: uppercase;
+	font-size: 80%;
+	font-weight: bold;
+	color: #00688B;
+	text-decoration:none;
+}
+
+
+/*****************************************************************
+Main horizontal navigation
+*****************************************************************/
+#nav {
+    background: #fff url(../SiteCollectionImages/common/navigation/kroger/mainNav_bg.jpg) no-repeat top left;
+    clear:both;
+    color:#FFFFFF;
+    height: 36px;
+    margin:0;
+    padding:0;
+}
+
+#nav ul {
+    background:transparent;
+    list-style-image:none;
+    list-style-position:outside;
+    list-style-type:none;
+	position:relative;
+}
+
+#nav li {
+    margin:0;
+    padding:0;
+	position: absolute;
+	display: block;
+	/*float: left;*/
+}
+
+#nav li.pipe 
+{
+    width: 1px;
+    margin: 0;
+    padding: 0;
+	background: url(../SiteCollectionImages/common/navigation/kroger/mainNav_pipe.gif) no-repeat 0 7px;
+	overflow: hidden;
+	height: 36px;
+}
+
+#nav a {
+    color:#ffffff;
+    display:block;
+    margin:0;
+	height: 100%;
+	padding-top: 12px;
+    text-decoration:none;
+    white-space:nowrap;
+}
+
+#nav a:hover, #nav a:active, #nav a#current {
+    background: transparent url(../SiteCollectionImages/common/navigation/kroger/mainNav_over.jpg) repeat-x 3px 0;
+}
+
+.navShim {
+    position:absolute;
+    display: none;
+    top: 36px;
+    left: 0px;
+    width: 215px;
+    height: 100px;
+    z-index: 100;
+    background: transparent;
+}
+
+#nav #mainNav_pipe1 
+{
+    left: 29px;
+}
+
+#nav #mainNav_item1 {
+	left: 30px;
+	width: 60px;
+	background: none;
+	
+}
+
+#nav #mainNav_pipe2
+{
+    left: 90px;
+}
+
+#nav #mainNav_item2 {
+	left: 91px;
+	width: 98px;
+}
+
+#nav #mainNav_pipe3
+{
+    left: 189px;
+}
+
+#nav #mainNav_item3 {
+	left: 190px;
+	width: 114px;
+}
+
+#nav #mainNav_pipe4
+{
+    left: 304px;
+}
+
+#nav #mainNav_item4 {
+	left: 305px;
+	width: 100px;
+}
+
+#nav #mainNav_pipe5
+{
+    left: 405px;
+}
+
+#nav #mainNav_item5 {
+	left: 406px;
+	width: 101px;
+}
+
+#nav #mainNav_pipe6
+{
+    left: 507px;
+}
+
+#nav #mainNav_item6 {
+	left: 508px;
+	width: 76px;
+}
+
+
+#nav #mainNav_pipe7
+{
+    left: 584px;
+}
+
+#nav #mainNav_item7 {
+	left: 585px;
+	width: 86px;
+}
+
+#nav #mainNav_pipe8
+{
+    left: 671px;
+}
+
+
+/* Begin 10/12/07 Updates */
+
+#nav #mainNav_item8 {
+left: 672px;
+width: 70px;
+}
+
+#nav #mainNav_pipe9
+{
+left: 742px;
+}
+
+
+#nav #mainNav_item9 {
+left: 743px;
+width: 71px;
+}
+
+
+#nav #mainNav_pipe10
+{
+left: 814px;
+}
+
+/* End 10/12/07 Updates */
+
+
+/*
+#nav li:hover, #nav li.sfhover {
+	background-color: #8097b2;
+}
+*/
+
+#nav a.main {
+	padding-bottom: 13px;
+}
+
+#nav #mainNav_item3 a.main, #nav #mainNav_item5 a.main, #nav #mainNav_item7 a.main {
+	padding-bottom: 10px;
+}
+
+#nav #mainNav_item1 a.main {
+	padding-left: 11px;
+}
+
+#nav #mainNav_item2 a.main {
+	padding-left: 15px;
+}
+
+#nav #mainNav_item3 a.main {
+	padding-left: 14px;
+}
+
+#nav #mainNav_item4 a.main {
+	padding-left: 14px;
+}
+
+#nav #mainNav_item5 a.main {
+	padding-left: 13px;
+}
+
+#nav #mainNav_item6 a.main {
+	padding-left: 13px;
+}
+
+#nav #mainNav_item7 a.main {
+	padding-left: 13px;
+}
+
+#nav #mainNav_item8 a.main {
+	padding-top: 12px;
+	padding-left: 12px;
+}
+
+#nav #mainNav_item9 a.main {
+	padding-top: 13px;
+	padding-left: 13px;
+}
+
+/*****************************************************************
+Dropdowns from Main horizontal navigation
+*****************************************************************/
+
+.subNavContainer {
+	position: absolute;
+	visibility:hidden;
+	z-index: 10000;
+	background-color: #fff;
+	padding: 0;
+	margin:0;
+	border: 1px solid #7e9ec1;
+	border-top: none;
+	width: 200px;
+}
+
+.subNavContainer ul, #SeeAll_subNav ul {
+    padding:5px;
+	margin: 0;
+}
+
+.subNavContainer ul li, #SeeAll_subNav li {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px dotted #cccccc;
+}
+
+.subNavContainer ul li.last, #SeeAll_subNav li.last {
+	border: none;
+}
+
+.subNavContainer ul li a, #SeeAll_subNav a {
+	text-align: left;
+	font-weight: bold;
+	font-size: 90%;
+	display: block;
+	padding: 3px 2px;	
+	margin: 0;
+    text-decoration:none;
+	color: #636363;
+}
+
+.subNavContainer ul li span, #SeeAll_subNav span {
+	font-size: 90%;
+	display: block;
+	padding: 3px 2px;	
+	margin: 0;
+}
+.subNavContainer ul li a:hover, .subNavContainer ul li a:active, #SeeAll_subNav a:hover, #SeeAll_subNav a:active {
+	background: #f1f1f1;
+	color: #3873c5;
+}
+
+/*****************************************************************
+Drop Downs part 2
+*****************************************************************/
+#nav li ul {
+	z-index: 10000;
+	background-color: #fff;
+	padding: 5px;
+	margin:0;
+	border: 1px solid #7e9ec1;
+	border-top: none;
+	width: 200px;
+}
+
+#nav li li {
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px dotted #ccc;
+	position:relative;
+	background: #ffffff;
+}
+
+#nav li li a {
+	text-align: left;
+	font-weight: bold;
+	font-size: .75em;
+	display: block;
+	padding: 3px 2px;	
+	margin: 0;
+    text-decoration:none;
+	color: #636363;
+}
+
+#nav li li a:hover, #nav li li a:active {
+	background: #f1f1f1;
+	color: #3873c5;
+}
+
+.show {
+	display: block;
+}
+
+.hide {
+	display: none;
+}
+
+/*****************************************************************
+See All Overlay
+*****************************************************************/
+
+
+#mainNav_item9-menu 
+{
+	width: 938px;
+	padding: 0;
+	margin: 0;
+	margin-left: -730px;
+	background: #fff;
+	overflow: hidden;
+	border: 1px solid #7e9ec1;
+	border-top: none;
+	z-index: 10000;
+	position: relative;
+	
+}
+
+#mainNav_item9-menu span {
+	font-size: .75em;
+	display: block;
+	padding: 3px 2px;	
+	margin: 0;
+}
+
+#nav #mainNav_item9-menu ul {
+	border: none;
+}
+
+#mainNav_item9-menu .columnEntry, #mainNav_item9-menu .columnEntryLast {
+	width: 19.8%;
+	height: 200px;
+	float: left;
+	padding: 0;
+	overflow: hidden;
+}
+
+#mainNav_item9-menu .columnEntry {
+	border-right: 1px solid #333;
+}
+	
+#mainNav_item9-menu .columnEntryLast {
+	border: none;
+}
+
+#mainNav_item9-menu .header {
+	font-weight: bold;
+	font-size: 100%;
+	color: #124c9e;
+}
+
+#nav #mainNav_item9-menu ul 
+{
+    width: 170px;
+}
+
+#mainNav_item9-menu .body 
+{
+    background: #fff;
+    border: none;
+}
+
+
+/*****************************************************************
+Simple store locator overlay
+*****************************************************************/
+#storeLocatorHeader {
+	float: right;
+	width: 300px;
+	display: none;
+	position: absolute;
+	z-index: 10000;
+	background: #ffffff;
+	border: 1px solid #3873c5;
+	left: 630px;
+	top: 50px;
+	overflow: hidden;
+}
+
+#storeLocatorHeader h2 
+{
+    padding-bottom: 0;
+    color: #3873C5;
+}
+
+#storeLocatorHeader h4
+{
+
+    margin: 5px 0 3px 0;
+}
+
+#storeLocatorHeader p {
+	margin: 4px 0;
+	padding: 0;
+}
+
+#storeLocatorHeader .body
+{
+    padding: 15px;
+}
+
+#storeLocatorHeader .dottedHeader 
+{
+    margin-bottom: 10px;
+}
+
+#storeLocatorHeader #searchBtn 
+{
+    padding: 5px 10px 0 0;
+}
+
+#storeLocatorHeader #advanced 
+{
+    padding-top: 10px;
+}
+
+/*****************************************************************
+Simple store locator overlay
+*****************************************************************/
+#privacyPolicy {
+	width: 500px;
+	height: 300px;
+	display: none;
+	position: absolute;
+	z-index: 10000;
+	background: #ffffff;
+	border: 1px solid #3873c5;
+	left: 230px;
+	top: 350px;
+	overflow: hidden;
+	margin: auto;
+}
+
+#privacyPolicy .body 
+{
+    padding: 10px 15px;
+}
+
+#privacyPolicy iframe 
+{
+    width: 100%;
+    height: 220px;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+#privacyPolicy h2 {
+    color: #073582;
+    background: url(../SiteCollectionImages/banner_logo_small.gif) no-repeat 0 0;
+    padding: 20px 10px 20px 75px;
+}
+
+
+/******************************************************************
+Store Locator Pages
+******************************************************************/
+#advancedStoreLocator {
+	
+	right: 0;
+	color: #000;
+	font-size: 1.1em;
+	height: 500px;
+	overflow: hidden;
+}
+#advancedStoreLocator #content {
+	
+	background: #f0f0f0;
+	padding: 5px;
+	margin: 0;
+	
+}
+
+#layoutTwoColumns #column2 .leftColumn, #layoutTwoColumns #column2 .rightColumn {
+	width: 45%;
+	padding:  0 5px;
+	float: left;
+	margin: 15px 0;
+}
+
+#advancedStoreLocator .leftColumn {
+
+}
+
+#advancedStoreLocator .rightColumn {
+	border-left: 1px dotted #cccccc;
+	padding-left: 20px;
+}
+
+#advancedStoreLocator label
+{
+	font-family: Verdana,sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;
+	font-size: 1em;
+	margin-right: 5px;
+}
+
+#advancedStoreLocator .formLabel {
+	text-align: right;
+	width: 100px;
+	padding-top: 0;
+}
+
+#advancedStoreLocator .searchBtn 
+{
+    padding: 0 0 0 100px;
+    display: block;
+}
+
+#drivingDirections 
+{    
+    width: 600px;
+    font-size: 1.1em;
+}
+
+#directionsMap 
+{
+    text-align: center;
+}
+
+#drivingDirections th 
+{
+    text-align: left;
+}
+
+#drivingDirections table 
+{
+    width: 100%;
+}
+
+#drivingDirections table .column1 
+{
+    width: 450px;   
+}
+
+#drivingDirections table td 
+{
+    vertical-align: top;
+}
+/******************************************************************
+Main Content Area
+******************************************************************/
+
+#contentBox {
+	background: url(../img/bg.jpg) no-repeat;
+	width: 960px;
+	height: 704px;
+}
+
+#content {
+	width: 940px;
+	padding: 70px 0 0 50px;
+	height: 704px;
+	margin: 0 auto;
+}
+
+#jar {
+	background: url(../img/jar.jpg) no-repeat;
+	width: 265px;
+	height: 452px;
+}
+
+.textBG {
+	background: url(../img/textBG.jpg) no-repeat;
+	width: 289px;
+	height: 38px;
+	font-weight: bold;
+	color: #c7c7c7;
+	width: 275px;
+	font-size: 16pt;
+	border: none;
+	outline: none;
+	padding-left: 25px;
+	margin: 25px 0 0 140px;
+	display: block
+}
+
+.button {
+	background: url(../img/button.jpg) no-repeat;
+	width: 120px;
+	height: 33px;
+	border: none;
+	outline: none;
+	font-weight:bold;
+	margin: 0 0 0 225px;
+}
+
+#milkbone {
+	background: url(../img/bone.jpg) no-repeat;
+	width: 479px;
+	height: 205px;
+	float: left;
+}
+
+.letters {
+	padding: 100px 0 0 150px;
+}
+
+img.letter {
+}
+
+#legal {
+	width: 250px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 7pt;
+	color: #000;
+}
+
+#jar {
+	background: url(../img/jar.jpg);
+	width: 279px;
+	height: 438px;
+	margin: -310px 0 0 600px;
+}
+
+#facebook {
+	width: 270px;
+	height: 62px;
+	float: right;
+	margin: -75px 55px 0 0;
+}
+
+#contentBox #boxTop {
+	background: url(../SiteCollectionImages/common/contentBox_top.gif) no-repeat top left;
+	height: 15px;
+}
+
+#contentBox #boxBottom 
+{
+	/*background: url(../SiteCollectionImages/common/contentBox_bottom.gif) no-repeat top left;*/
+    background: url(../SiteCollectionImages/common/contentBox_bottom.jpg) no-repeat top left;
+	height: 56px;
+}
+
+#contentBox .body{
+	padding: 0 10px;
+	overflow:hidden;
+}
+
+#contentBox #contentNoLeftNav {
+	width: 100%;
+	overflow:hidden;
+}
+
+/******************************************************************
+Inner boxes
+******************************************************************/
+.box320
+{
+    width: 320px;
+    background: url(../SiteCollectionImages/common/boxBg_320px.gif) repeat-y top left;
+}
+.box320Top 
+{
+    width: 320px;
+    height: 10px;
+    background: url(../SiteCollectionImages/common/boxTop_320px.gif) no-repeat top left;
+}
+
+.box320Bottom 
+{
+    width: 320px;
+    height: 10px;
+    background: url(../SiteCollectionImages/common/boxBottom_320px.gif) no-repeat top left;
+}
+
+.box421
+{
+    width: 421px;
+    background: url(../SiteCollectionImages/common/boxBg_421px.gif) repeat-y top left;
+    margin-bottom: 10px;
+}
+.box421Top 
+{
+    width: 421px;
+    height: 10px;
+    background: url(../SiteCollectionImages/common/boxTop_421px.gif) no-repeat top left;
+}
+
+.box421Bottom 
+{
+    width: 421px;
+    height: 10px;
+    background: url(../SiteCollectionImages/common/boxBottom_421px.gif) no-repeat top left;
+}
+
+.miniPromo 
+{
+    margin-bottom: 3px;
+    clear: both;
+}
+
+#layoutCommon #column2 .miniPromo .body  
+{
+        padding: 0 17px;
+}
+
+#layoutCommon #column2 .box421 .body  
+{
+    padding: 0 17px;
+}
+
+#layoutCommon #column3 .box320 h2 
+{
+    padding-top: 5px;
+}
+
+
+#layoutCommon #column3 .box320 .body 
+{
+    padding: 0 20px;
+}
+
+.rightText {
+    float: left;
+}
+
+#layoutCommon #column3 .box320 .rightText {
+    width: 180px;
+}
+
+#layoutCommon #column2 .box421 .rightText, .miniPromo .rightText {
+    width: 270px;
+}
+
+/******************************************************************
+Page layouts
+******************************************************************/
+#layoutHome 
+{
+    overflow: hidden;
+    clear: both;
+    width: 940px;
+}
+
+#layoutHome #alert 
+{
+    margin: 0 15px 10px 15px;
+    background: #CDCE9F;
+    overflow: hidden;
+    padding: 10px;
+}
+
+
+#layoutHome #column1 {
+	width: 590px;
+	float: left;
+}
+
+#layoutHome #column2 {
+	width: 320px;
+	float: right;
+}
+
+#layoutHome #hero {
+	background: #ffffff/* url(../SiteCollectionImages/common/hero_bg.gif) no-repeat 2px 10px*/;
+	height: 270px;
+	margin: 0 0 10px 0;
+}
+
+#layoutHome #hero .body {
+	padding: 10px 2px;
+}
+
+#layoutHome #heroBody {
+	padding: 8px 2px 8px 2px;
+}
+
+#layoutHome #featuredPromo, #layoutCommon #featuredPromo
+{
+    height: 270px;
+    background: url(../SiteCollectionImages/common/shadowBox_320x270.gif) no-repeat top left;
+}
+
+#featuredPromoBody 
+{
+    padding: 10px;
+}
+
+#layoutHome #expert {
+	background: #fff url(../SiteCollectionImages/common/expert_bg.gif) no-repeat top left;
+	height: 270px;
+	width: 251px;
+	float: left;
+}
+
+#layoutHome #expertBody 
+{
+    padding: 0 8px 0 8px;
+}
+
+#layoutHome #articles {
+	height: 270px;
+	float: right;
+	width: 330px;
+	background: #fff url(../SiteCollectionImages/common/articles_bg.gif) no-repeat top left;
+}
+
+#layoutHome #expert, #layoutHome #articles, #layoutHome #inspirational {
+	margin: 0 0 10px 0;
+}
+
+#layoutHome #expert .body, #layoutHome #articles .body  {
+	height: 158px;
+}
+
+#layoutHome #expert .body {
+	padding: 0 8px;
+}
+
+#layoutHome #articles .body {
+	padding: 0 20px;
+}
+
+
+#layoutHome .footerLink {
+	height: 38px;
+	margin: 0;
+	padding: 0 8px;
+	
+}
+
+#layoutHome #video, #layoutCommon #video {
+	height: 270px;
+	padding: 0;
+	margin: 0 0 10px 0;
+	background: url(../SiteCollectionImages/common/video_bg.gif) no-repeat top left;
+}
+
+#layoutHome #video #videoBody, #layoutCommon #videoBody
+{
+	padding: 10px;   
+}
+
+#layoutHome #video .body, #layoutCommon #column3 #video .body {
+	padding: 10px;
+}
+
+#layoutHome #inspirational {
+	height: 270px;
+	padding: 0;
+	background: #fff url(../SiteCollectionImages/common/video_bg.gif) no-repeat top left;
+}
+
+#layoutHome .contentArea {
+	padding: 10px 20px;
+}
+
+#layoutHome .header {
+	padding: 0 20px;
+	height: 64px;
+}
+
+#layoutHome .header h2, #layoutHome .header h3 {
+	margin: 0;
+}
+
+#layoutHome .header h2, #layoutCommon .header h2 {
+	padding: 20px 0 1px 0;
+}
+
+#layoutHome .header h2 a, #layoutCommon .header h2 a 
+{
+    text-decoration: none;
+}
+
+#layoutHome .header h2 a:hover, #layoutHome .header h2 a:active,
+ #layoutCommon .header h2 a:hover, #layoutCommon .header h2 a:active
+{
+    text-decoration: underline;
+}
+
+#layoutHome .header h3 {
+	padding: 1px 0;
+	font-weight: normal;
+}
+
+#layoutHome h2 {
+	color: #2e2e2e; /*#1b4f93;*/
+}
+
+#layoutHome h3{
+}
+
+
+#layoutHome h4, #layoutCommon h4, #layoutTwoColumns h4 {
+	padding: 0 0 2px 0;
+	margin: 0;
+	color: #2e2e2e; /*#124c9e;*/
+}
+
+#layoutHome p, #layoutCommon p, #layoutTwoColumns p {
+	padding: 0 0 15px 0;
+	margin: 0;
+}
+
+#layoutHome .minPadding, #layoutCommon .minPadding, #layoutTwoColumns .minPadding
+{
+    padding-bottom: 5px;
+}
+
+.serviceAd 
+{
+    margin-top: 25px;
+}
+
+
+#layoutHome #serviceAd1 {
+	float: left;
+	width: 251px;
+}
+
+#layoutHome #serviceAd2 {
+	float: right;
+	width: 330px;
+}
+
+#layoutHome #serviceAd1 .body, #layoutHome #serviceAd2 .body {
+	padding: 0 20px;
+}
+
+ #layoutCommon #column2 .serviceAd .body
+ {
+    padding: 0 17px;
+ }
+ 
+ #layoutCommon #column3 .serviceAd .body  {
+	padding: 0 20px;
+}
+
+#layoutHome #serviceAd3 .body {
+	padding: 0 22px;
+}
+
+#layoutCommon #column3 #serviceAd3 .body {
+	padding: 0 22px;
+}
+
+.serviceAdImage {
+	float: right;
+	padding: 0 0 0 20px;
+	margin: 0;
+	text-align: center;
+}
+
+.serviceAd h3, .serviceAd p {
+	padding: 0 0 1px 0;
+	margin: 0;
+}
+
+.serviceAd h3 {
+	color: #5a5a5a;
+}
+
+.serviceAd a {
+	color: #2c6dc2;
+	text-decoration: none;
+}
+
+.serviceAd a:hover, .serviceAd a:active {
+	text-decoration: underline;
+}
+
+.serviceAd p a 
+{
+    font-weight: normal;
+}
+
+/******************************************************************
+Landing page layouts
+******************************************************************/
+#layoutCommon, #layoutSearchResults, #layoutTwoColumns {
+	background: url(../SiteCollectionImages/common/layoutCommon_Bg.gif) no-repeat 162px 0;
+	overflow: hidden;
+	clear: both;
+    width: 940px;
+}
+
+#layoutCommon #column1, #layoutCommon #column2, #layoutSearchResults #column1,
+#layoutSearchResults #column2, #layoutTwoColumns #column1, #layoutTwoColumns #column2  {
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+
+#layoutCommon #column3 {
+	float: right;
+	padding: 0;
+	margin: 0;
+}
+
+#layoutCommon #column1, #layoutTwoColumns #column1, #layoutSearchResults #column1 {
+	width: 175px;
+}
+
+#layoutCommon #column1 .body {
+    padding: 0 5px 20px 17px;
+}
+
+#layoutSearchResults #column1 .body {
+    padding: 0 15px 20px 17px;
+}
+
+#layoutCommon #column2 {
+	width: 430px;
+}
+
+#layoutCommon #column2 .body 
+{
+    padding: 0 0 20px 9px;
+}
+
+
+#layoutCommon #column3 {
+	width: 334px;
+	margin: 0;
+}
+
+#layoutCommon #column3 .body 
+{
+    padding: 0 0 20px 5px;
+}
+
+#layoutCommon #column1 .leftNavTip
+{
+   padding: 20px 0 5px 0;
+   width: 135px;
+   border-bottom: 1px dotted #cccccc;
+}
+
+#layoutCommon #column1 h4 
+{
+    padding: 0 0 5px 0;
+}
+
+#layoutCommon #column1 .leftNavTip p 
+{
+ line-height: 1.3em;   
+}
+
+#layoutCommon #column1 .textAd
+{
+   padding: 20px 0 5px 0;
+   width: 135px;
+}
+
+#layoutCommon #column1 .textAd h4 {
+   border-bottom: 1px dotted #cccccc;
+   margin-bottom: 5px;
+}
+
+#layoutCommon h1 {
+	padding: 0;
+	margin: 0 0 10px 0;
+}
+
+#layoutCommon #hero {
+	width: 421px;
+	height: 270px;
+	background: none;
+	margin: 0 0 10px 0;
+}
+
+#layoutCommon #hero .body {
+	padding: 10px 3px;
+}
+
+#layoutCommon #heroBody 
+{
+    padding: 8px 3px;
+}
+
+#layoutCommon #articles {
+	height: 270px;
+	margin: 0 0 10px 0;
+}
+
+#layoutCommon #articles
+{
+	width: 421px;
+	background: #fff url(../SiteCollectionImages/common/landingArticleBox_bg.gif) no-repeat top left;
+}
+
+#layoutCommon #relatedArticles
+{
+	width: 320px;
+	margin-bottom: 10px;
+}
+
+#layoutCommon #articles .body, #layoutCommon #mealPlanner .body, #layoutCommon .header {
+	padding: 0 17px;
+}
+
+#layoutCommon #column3 .header {
+	padding: 0 20px;
+	height: 60px;
+}
+
+#layoutCommon #articles .body, #layoutCommon #relatedArticles .body  {	
+	height: 161px;
+}
+
+
+#layoutCommon #articles .header, #layoutCommon #column2 .box421 .header
+{    
+	height: 60px;
+}
+
+#layoutCommon #mealPlanner .header, #layoutCommon #column3 #meetPlanner .header 
+{
+ height: 42px;   
+}
+
+
+#layoutCommon #mealPlanner, #layoutCommon #promo, #layoutCommon .ad_300x250, 
+#layoutCommon #recipeTipBox
+{
+	padding: 0;
+	margin: 0 0 10px 0;
+}
+
+#layoutCommon #mealPlanner
+{
+    width: 421px;
+	height: 168px;
+	background: url(../siteCollectionImages/common/contentBox_bg_421x168.gif) no-repeat top left;
+}
+
+
+#layoutCommon #miniPromos 
+{
+    height: 270px;
+    margin-bottom: 10px;
+}
+
+#column2 #miniPromos .body 
+{
+    padding: 20px 0 0 0;
+}
+
+#layoutCommon #promo, #layoutCommon .ad_300x250 
+{
+    width: 320px;
+	height: 270px;
+	background: url(../SiteCollectionImages/common/shadowBox_320x270.gif) no-repeat 0 -1px;
+}
+
+#layoutCommon #recipeTipBox {
+    background: url(../SiteCollectionImages/common/shadowBox_320x246.gif) no-repeat 0 0;    
+	height: 246px;
+}
+
+#layoutCommon #recipeTipBox .body
+{
+    padding: 10px 10px 10px 15px;
+}
+
+#layoutCommon #recipeTipBox .image
+{
+    float: right;
+    margin: 0 10px 15px 10px;
+}
+
+#layoutCommon #promo .body, #layoutCommon #column3 .ad_300x250 .body
+{
+    padding: 10px;
+}
+
+
+
+#layoutCommon #meetPlanner 
+{
+    width: 320px;
+	height: 168px;
+	padding: 0;
+	margin: 0 0 10px 0;
+	background: url(../siteCollectionImages/common/contentBox_bg_320x168.gif) no-repeat top left;
+}
+
+#layoutCommon #meetPlanner .body {
+	padding: 0 20px;
+}
+
+#layoutCommon .footerLink {
+	height: 38px;
+	margin: 0;
+	padding: 0 10px;
+	
+}
+
+#layoutCommon .header h2, #layoutCommon .header h3 {
+	margin: 0;
+}
+
+
+#layoutCommon .header h3 {
+	padding: 1px 0;
+	font-weight: normal;
+}
+
+#layoutCommon h2 {
+	color: #2e2e2e; /*#1b4f93;*/
+}
+
+#layoutCommon #column1 h2 
+{
+    padding: 5px 0;
+    margin: 0;
+}
+
+#layoutCommon .articleTease 
+{
+    height: 71px;
+    margin-bottom: 2px;
+}
+
+#layoutCommon .image, #layoutCommon .articleTease .image , #layoutCommon #meetPlanner .image 
+{   float: left;
+    margin-right: 20px;
+}
+
+.imageLeft, .imageRight 
+{   
+    margin-bottom: 10px;
+}
+
+.imageLeft, #layoutCommon .imageLeft 
+{   float: left;
+    margin-right: 20px;
+}
+
+.imageRight, #layoutCommon .imageRight 
+{   float: right;
+    margin-left: 20px;
+}
+
+#layoutSearchResults #column2, #layoutTwoColumns #column2 {
+	width: 765px;
+	margin: 0;
+	padding: 0;
+}
+
+#layoutSearchResults #column1 
+{   font-weight: bold;
+}
+
+#layoutSearchResults #column1 #searchTerm 
+{
+    color:#3873c5;
+}
+
+#layoutSearchResults #column2 .body 
+{
+    padding: 0 15px 0 25px;
+}
+
+#layoutSearchResults #column2 #searchResultsHeader
+{
+    border-bottom: 1px dotted #cccccc;
+    padding: 10px 0;
+    overflow: hidden;
+    margin-right: 10px;
+    width: 715px;
+}
+
+#layoutSearchResults #pagination 
+{
+    width: 715px;
+    margin-right: 10px;
+}
+
+#layoutSearchResults #column2 #searchResultsHeader #resultCount 
+{
+    float: left;
+    width: 300px;
+    font-size: 1.3em;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+#layoutSearchResults .pagination 
+{
+    float: right;
+    text-align: right;
+    font-weight: bold;
+}
+
+#layoutSearchResults .searchResultAlt, #layoutSearchResults .searchResult 
+{
+    overflow: hidden;
+    margin: 0 10px 10px 0;
+}
+
+#layoutSearchResults  #column2 .searchResultAlt .body, #layoutSearchResults  #column2 .searchResult .body
+{
+    padding: 10px 10px 5px 10px;
+}
+
+#layoutSearchResults .searchResultAlt 
+{
+    background: #f4f4f4;
+}
+
+
+#layoutSearchResults .resultNumber
+{
+    float: left;
+    width: 10px;
+    color:#3873c5;
+    font-weight: bold;
+    margin: 0 5px 0 7px;
+}
+
+#layoutSearchResults .resultDescription
+{
+    float: left;
+    width: 650px;
+}
+
+
+#layoutSearchResults .resultDescription h4
+{   padding: 0;
+    margin:0;
+}
+
+#layoutSearchResults .resultDescription p
+{   padding: 5px 0;
+    margin:0;
+}
+
+#hero-subPage 
+{
+     height: 260px;
+     margin-bottom: 10px; 
+}
+
+#layoutCommon #hero-subPage .body
+{
+    padding: 10px 3px;
+}
+
+#box3-subPage .body
+{
+ height: 240px;   
+}
+
+ #box4-subPage .body, #box2-subPage .body {
+ height: 200px;   
+}
+
+#layoutCommon #column2 #hero-subPage .header, #column3 #box3-subPage .header, 
+#layoutCommon #column2 #box2-subPage .header, #column3 #box4-subPage .header
+{
+ height: 30px;   
+}
+
+#hero-subPage .header h2, #box2-subPage .header h2
+{
+    padding: 5px 0 0 0;
+}
+
+
+/******************************************************************
+Breadcrumbs
+******************************************************************/
+#breadcrumb {
+	font-size: 1em;
+	font-weight: bold;
+	color: #616161;
+	height: 25px;
+	width: 737px;
+	margin-left: 13px;
+	float: left;
+	padding-top: 10px;
+}
+
+
+
+/******************************************************************
+Footer navigation
+******************************************************************/
+
+#footer {
+	background: #f3f3f3;
+	overflow:hidden;
+	padding: 0 0 20px 0;
+	margin: 0;
+	color: #5e5e5e;	
+	font-size: .9em;
+}
+
+#footer #emailSignup {
+	float: left;
+	width: 275px;
+	overflow: hidden;
+}
+
+#footer #emailSignup .body {
+	padding: 10px 10px 0px 40px;
+}
+
+#footer #emailSignup p {
+	padding: 0 0 10px 0;
+	margin: 0;
+}
+
+#footer #emailSignup p.header {
+	padding-top: 0;
+	margin-top: 0;
+}
+
+#footer #navList1, #footer #navList2, #footer #navList3, #footer #navList4 {
+	float: left;
+	padding: 0;
+	margin: 12px 0 0 0;
+	background: url(../SiteCollectionImages/common/footerList_vertDottedBorder.gif) repeat-y 0 0;
+	height: 125px;
+}
+
+#footer #navList1 {
+	width: 170px;
+}
+
+#footer #navList2 {
+	width: 198px;	
+}
+
+#footer #navList3 {
+	width: 123px;	
+}
+
+#footer #navList4 {
+	width: 120px;	
+}
+
+#footer ul {
+	float: left;
+	list-style: none;
+	padding: 0px 0px 0 22px;
+	margin: 0;	
+}
+
+#footer li 
+{
+    padding: 0 0 2px 0;
+    margin: 0;
+}
+
+#footer #navList1 ul {
+	padding: 0px 0px 0 24px;
+}
+
+#footer #navList3 ul {
+	padding: 0px 0px 0 21px;
+}
+
+
+#footer a {
+	font-weight: normal;
+	color: #5e5e5e;	
+	text-decoration: none;
+}
+
+#footer a:active, #footer a:hover {
+	text-decoration: underline;
+}
+
+#footer .header {
+	font-weight: bold;
+	color: #747474;
+}
+
+#footer input {
+	border: 1px solid #7c9bb2;
+	height: 16px;
+	margin: 0;
+	padding: 2px 0 0 0;
+	font-size: 1.1em;
+}
+
+#footer span {
+	margin: 0 5px 0 0;
+	padding: 0;
+	float: left;
+}
+
+#footer #rssFeed {
+	margin: 0;
+	padding: 10px 0 0 0;
+	overflow: hidden;
+}
+
+#footer #rssFeed img {
+	padding-right: 10px;
+	float: left;
+}
+
+#footer #rssFeed span {
+	padding: 5px 0 0 0;
+	margin: 0;
+}
+
+#footer form {
+ height: 25px;
+ margin: 0;
+ padding: 0;
+}
+
+
+/******************************************************************
+Copyright and Legal Footer
+******************************************************************/
+#legalFooter {
+	background: #fff;
+	color: #5e5e5e;
+	font-size: 1em;
+    margin: 0;
+}
+
+#legalFooter a {
+	color: #124c9e;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+#legalFooter a:hover, #legalFooter a:active {
+	text-decoration: underline;
+}	
+
+#legalFooter span {
+	padding: 0 1px;
+}
+
+#legalFooter div {
+	padding: 2px 0;
+}
+
+#legalFooter .body {
+	padding: 13px 20px 0px 22px;
+}
+
+/******************************************************************
+Tertiary left nav
+******************************************************************/
+#tertiaryNav {
+	float: left;
+	width: 140px;
+	margin: 20px 0 30px 0;
+}
+
+#tertiaryNav h1 {
+	font-size: 120%;
+}
+
+#tertiaryNav h2 {
+	font-size: 110%;
+}
+
+#tertiaryNav h3 {
+	font-size: 100%;
+	text-transform:uppercase;
+}
+
+#tertiaryNav ul {
+	margin: 2px 0 15px 0;
+	padding: 0;
+	width: 135px;
+	border-bottom: 1px dotted #cccccc;
+}
+
+#tertiaryNav a {
+	display: block;
+	text-decoration: none;
+	font-weight: bold;
+	
+}
+
+#tertiaryNav li 
+{
+    padding: 0;
+	margin:0;
+	border-top: 1px dotted #cccccc;
+
+}
+
+#tertiaryNav li a {
+	padding: 5px 0;
+	margin: 0;
+	height: 100%;
+}
+
+#tertiaryNav li a:active, #tertiaryNav li a:hover 
+{
+    background: #f1f1f1;
+}
+
+#tertiaryNav .last {
+	border-bottom: 1px dotted #cccccc;
+}
+
+#recipeNav h3, #recipeNav h4 {
+	text-transform:uppercase;
+	color: #6e6e6e;
+}
+
+#recipeNav h3 a 
+{
+    text-decoration: none;
+}
+#recipeNav .recipeListDivider {
+    border-top: 1px dotted #cccccc;
+    height: 1px;
+    width: 130px;
+    margin: 3px 0 6px 0;
+}
+
+#recipeNav ul {
+	padding: 0;
+	margin: 0;
+}
+
+#recipeNav li {
+	margin:0;
+	padding: 3px 0;
+}
+
+#recipeNav li a 
+{
+    padding: 0 8px;
+    font-size: .9em;
+}
+
+#recipeNav li a#current {
+    background: url(../SiteCollectionImages/common/blueListArrow.gif) no-repeat 0 4px;
+}
+
+#recipeNav .recipeNavList {
+	display: block;
+}
+
+#recipeNav .recipeNavList span {
+	display: none;
+}
+
+#recipeNav li.allRecipes {
+	display: none;
+	padding: 0;
+	margin: 0;
+}
+
+
+#recipeNav .allRecipes a {
+	font-size: .75em;
+	display: block;
+}
+
+#recipeNav .allRecipes ul 
+{
+    padding: 0;
+    margin: 0;
+}
+
+/******************************************************************
+Recipe search boxes
+******************************************************************/
+#layoutCommon #recipeSearchLeftNav 
+{
+    margin-bottom: 7px;
+}
+
+#layoutCommon #recipeSearchLeftNav input
+{
+    width: 123px;
+}
+
+#layoutCommon #recipeSearchLeftNav .body 
+{    
+	padding: 3px;
+}
+
+#layoutCommon #column1 .advanced 
+{
+    padding: 6px 0;
+    font-weight: normal;
+    font-size: 1em;
+}
+
+#layoutCommon #recipeSearchTerm 
+{
+ float: left;
+ width: 150px; 
+}
+
+#layoutCommon #emailDinnerIdeas 
+{
+ width: 170px; 
+ float: left;
+}
+
+
+
+/******************************************************************
+Recipe pages
+******************************************************************/
+#recipeDetailHeader 
+{
+    background: #f4f4f4;
+    width: 650px;
+    overflow: hidden;
+    float: left;
+    margin: 0 13px;
+    height: 49px;
+    width: 737px;
+}
+
+#layoutCommon #column1 .advanced 
+{
+    padding: 6px 0;
+    font-weight: normal;
+    font-size: 1em;
+}
+
+#bodySearchHeader 
+{
+    width: 417px;
+    float: left;
+    background: #f4f4f4;
+}
+
+#bodySearchHeader .formLabel
+{
+    width: 90px;
+}
+
+#layoutCommon #bodySearchHeader .body, #layoutTwoColumns #bodySearchHeader .body
+{
+    padding: 10px 2px;   
+}
+
+#layoutCommon #bodySearchHeader .body .formField .body 
+{
+    padding: 3px;
+	margin: 0;
+	overflow: hidden;
+}
+
+#bodySearchHeader .advanced 
+{
+    padding: 0;
+    font-size: 1em;
+    padding: 8px 0 0 10px;
+    float: left;
+}
+
+/*****
+Recipe Detail Page
+*****/
+#recipeDetailDescription, #recipeDetailIngredients 
+{
+    width: 410px;
+    margin-left: 4px;
+}
+
+#layoutCommon #column3 #recipeDetailNutrition .body {
+    padding: 0 0 15px 0;
+}
+
+#layoutCommon #column2 #recipeDetailDescription .body 
+{
+    padding: 0;
+}
+
+#recipeDetailIngredients 
+{
+      border-top: 1px dotted #cccccc;
+}
+
+#layoutCommon #column2 #recipeDetailIngredients .body 
+{
+      padding: 10px 0;
+}
+
+#recipeDetailNutrition ul 
+{
+    float: left;
+    width: 150px;
+    margin-left: 0;
+}
+
+#recipeDetailDirections, #recipeDetailSuggested
+{
+    border-top: 1px dotted #cccccc;
+    width: 725px;
+}
+
+.addToShoppingList 
+{
+    background: url(../siteCollectionImages/icons/shoppingList.gif) no-repeat top left;
+    padding: 5px 0 5px 25px;
+    overflow: hidden;
+}
+
+#recipeDetailDirections ol
+{
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#recipeDetailDirections ol li
+{
+    margin-left: 23px;
+    padding-left: 0;
+}
+
+#recipeDetailSuggested .suggestedRecipe, #recipeDetailSuggested .suggestedRecipeLast
+{
+    width: 160px;
+    padding: 10px 0;
+    margin: 0;
+    float: left;
+}
+
+#recipeDetailSuggested .suggestedRecipe {
+    margin-right: 20px;
+}
+
+#recipeDetailSuggested .body
+{
+    padding: 10px 0;
+}
+
+#recipeDetailDirections .body
+{
+    padding: 10px 0;
+}
+
+#recipeDetailSuggested .suggestedRecipe img 
+{
+    margin: 10px 0;
+}
+
+#recipeImage 
+{
+    margin: 10px 0;
+}
+
+#printRecipe 
+{
+    float: right;
+    width: 220px;
+    overflow: hidden;
+    padding-left: 2px;
+    background: url(../publishingImages/recipes/headerPipe.gif) no-repeat 0 3px;
+}
+
+#printRecipe .body 
+{
+    padding: 0 10px 0 20px;
+}
+
+#printRecipe .printSize
+{
+ float: left;
+ width: 22px;
+ margin-right: 13px;
+}
+
+#printRecipe .printSize a 
+{
+ height: 40px;
+ overflow: hidden;
+ display: block;
+}
+
+#printRecipe #print3x5 
+{
+    background: url(http://sitecollectionimages/icons/card3x5.gif) no-repeat 2px 20px;
+    padding-top: 30px;
+}
+
+#printRecipe #print4x6 
+{
+    background: url(http://sitecollectionimages/icons/card4x6.gif) no-repeat 2px 16px;
+    padding-top: 30px;
+}
+
+
+#printRecipe #full {
+    background: url(http://sitecollectionimages/icons/cardFull.gif) no-repeat 1px 8px;
+    padding-top: 30px;
+}
+
+
+/*****
+Recipe Listing Page
+*****/
+#layoutCommon #resultCountHdr
+{
+    float: left;
+    margin: 0 10px 0 8px;
+}
+
+#layoutCommon #listingHeader, #layoutCommon #recipeCategoryListings 
+{
+    overflow: hidden;
+    width: 417px;
+}
+
+/*
+#layoutCommon #recipeCategoryListings 
+{
+    padding: 0 0 15px 0;
+}
+*/
+
+#layoutCommon #listingHeader, .dottedHeader
+{
+    padding: 0 0 10px 0;
+    border-bottom: 1px dotted #cccccc;
+    overflow: hidden;
+    width: 100%;
+}
+
+#layoutCommon #recipeCategoryListings .column1, #layoutCommon #listingHeader .column1
+{
+    width: 250px;
+    float: left;
+}
+
+#layoutCommon #recipeCategoryListings .column1
+{
+    width: 240px;
+    overflow: hidden;
+}
+
+#layoutCommon #recipeCategoryListings .timeColumn, #layoutCommon #listingHeader .timeColumn
+{
+    width: 75px;
+    text-align: center;
+    float: left;
+}
+
+#layoutCommon #recipeCategoryListings .timeColumn
+{
+    font-size: 1em;
+    overflow: hidden;
+}
+   
+ #layoutCommon #listingHeader .timeColumn 
+{
+    font-weight: bold;
+    font-size: 1.15em;
+ }
+ 
+
+#layoutCommon #recipeCategoryListings h4
+{
+    color: #000000;
+}
+
+#layoutCommon .listing, #layoutCommon .listingAlt 
+{
+    padding: 10px;
+}
+
+#layoutCommon #recipeCategoryListings .listing, #layoutCommon #recipeCategoryListings .listingAlt
+{
+    overflow: hidden;
+    padding: 10px 0 10px 10px;
+    clear: both;
+}
+
+#layoutCommon #recipeCategoryListings .listingAlt, #layoutCommon .listingAlt 
+{
+    background: #f4f4f4;
+}
+
+#listingPagination 
+{
+
+    width: 417px;
+    float: left;
+}
+
+/******************************************************************
+My Kroger pages
+******************************************************************/
+
+#plusCardSavings 
+{
+   height: 64px;
+}
+
+#layoutCommon #column3 #plusCardSavings .body
+{
+    padding: 0 10px;
+}
+
+#column3 #plusCardSavings .innerBody
+{
+    background: #f6f6f6;
+    padding: 0 5px 0 10px;
+    height: 44px;
+}
+
+#column3 #plusCardSavings h2, #column3 #plusCardSavings p, #column3 #preferredStore h2, #column3 #preferredStore p
+{
+    padding: 5px 0 0 0;
+    margin: 0;
+}
+
+#column3 .box320, #plusCardSavings, #programRewards, #preferredStore
+{
+    margin: 0 0 10px 0;
+}
+
+#column3 #programRewards .body 
+{
+ padding: 0 15px; 
+}
+
+#column3 #programRewards p 
+{
+    padding-bottom: 5px;
+}
+
+#programRewards .rewardInfo 
+{
+    border-bottom: 1px dotted #cccccc;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+#layoutCommon #column2 #storeNewsListing .body
+{
+    padding: 0 13px;
+}
+
+#layoutCommon #column2 #storeNewsListing .listing, #column2 #storeNewsListing .listingAlt
+{
+    padding: 10px;
+    overflow: hidden;
+}
+
+#layoutCommon #column2 #storeNewsListing .listing p, #column2 #storeNewsListing .listingAlt p
+{
+    padding: 0 0 5px 0;
+}
+
+#profileForm 
+{
+    width: 404px;
+    padding: 15px 0 10px 0;
+    border-top: 1px dotted #cccccc;
+    font-size: 1.2em;
+    overflow: hidden;
+}
+
+#profileFormHdr 
+{
+    width: 404px;
+}
+
+#profileFormHdr #requiredHdr 
+{
+    float: right;
+    margin: 0 10px;
+    width: 100px;
+    text-align: right;
+}
+
+#profileForm .divider {
+    border-bottom: 1px dotted #cccccc;
+    margin: 10px 0 15px 0;
+    height: 1px;
+    clear: both;
+}
+
+#profileForm label {
+	font-family: Verdana,sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;
+	font-size: 1em;
+}
+
+#profileForm .leftCol {
+	width: 150px;
+	text-align: right;	
+	float: left;
+	margin: 0 0 5px 0;
+	padding-top: 3px;
+}
+
+#profileForm .rightCol {
+	width: 240px;
+	float: right;
+	margin: 0 0 5px 0;
+	padding: 0;
+}
+
+#profileForm .shortField 
+{
+    width: 60px;
+    margin: 0;
+    padding: 0;
+}
+
+#profileForm span
+{
+    margin: 0;
+    padding: 0;
+}
+
+#profileForm select 
+{
+    margin-right: 20px;
+}
+
+#profileForm input 
+{
+    width: 160px;
+}
+
+#profileForm .micro 
+{
+    width: 30px;
+}
+
+#profileForm .mini 
+{
+    width: 50px;
+}
+
+#profileForm .short 
+{
+    width: 120px;
+}
+
+#profileForm .long 
+{
+    width: 220px;
+}
+
+#profileForm .checkbox , .checkbox
+{
+    padding-top: 3px;
+    padding-bottom: 0;
+    margin: 0;
+    margin-right:2px;
+    width: 20px;
+}
+
+#layoutCommon #shoppingListTasks p 
+{
+    padding: 7px 0;
+}
+
+#shoppingListOptions {
+    width: 323px;
+    height: 27px;
+    background: url(../siteCollectionImages/placeholders/shoppingListHdrLeft.gif) no-repeat 0 0;
+}
+
+#shoppingListOptions ul 
+{   
+ list-style: none;
+ padding: 0 5px;
+ margin: 0;   
+    height: 27px;
+    background: url(../siteCollectionImages/placeholders/shoppingListHdrRight.gif) no-repeat top right;
+}
+
+#shoppingListOptions li 
+{
+    float: left;
+    text-align: center;
+    background: url(../siteCollectionImages/placeholders/shoppingListHdrBg.gif) repeat-x 0 0; 
+    height: 27px;
+} 
+
+#shoppingListOptions #opt1 
+{
+    width: 134px;
+}
+
+#shoppingListOptions #opt2
+{
+    width: 100px;
+}
+
+#shoppingListOptions #opt3
+{
+    width: 75px;
+}
+
+
+
+#shoppingListOptions li a 
+{
+    text-decoration: none;
+    color: #616161;
+    font-size: .9em;
+    padding: 6px 0;
+    display: block;
+}
+
+#shoppingListOptions .pipe 
+{
+    background: url(../siteCollectionImages/placeholders/shoppingListHdrPipe.gif) no-repeat top left;
+    width: 2px;
+}
+
+#shoppingListOptions a:hover, #shoppingListOptions a:active 
+{
+
+    color: #3873c5;
+}
+
+#shoppingList, #shoppingList #listingHeader 
+{
+    width: 410px;
+}
+
+
+
+#shoppingList .listing ul, #shoppingList .listingAlt ul 
+{
+    padding: 5px 0;
+    margin: 0;
+}
+
+#layoutCommon #column3 #shoppingListTasks .body
+{
+    position: relative;
+    overflow: visible;
+}
+
+#shoppingListTasks ul 
+{
+    margin-left: 0;
+}
+
+#shoppingListTasks li 
+{
+    padding-bottom: 5px;
+}
+
+.shoppingListOverlay, #addList-menu, #clear-menu, #delete-menu, #editAdded-menu
+{
+	float: right;
+	width: 330px;
+	position: absolute;
+	z-index: 10000000;
+	background: #ffffff;
+	border: 1px solid #3873c5;
+	left: -330px;
+	top: 20px;
+	overflow: hidden;
+	font-size: .8em;
+}
+
+.shoppingListOverlay {
+	display: none;
+}
+
+.shoppingListOverlay input, .shoppingListOverlay select
+{
+    font-size: 1em;
+}
+
+#layoutCommon #column3 #shoppingListTasks .shoppingListOverlay .body 
+{
+    background: #ffffff;
+    padding: 5px 10px;
+}
+
+
+/******************************************************************
+Article Detail pages
+******************************************************************/
+#articleDetail 
+{
+    padding-right: 10px;
+}
+
+#articleDetail .image 
+{
+    margin-bottom: 10px;
+}
+
+.sendToFriend 
+{
+    background: url(../siteCollectionImages/icons/mailToFriend.gif) no-repeat 0 3px;
+    padding: 5px 0 5px 25px;
+    overflow: hidden;
+}
+
+.printVersion
+{
+    background: url(../siteCollectionImages/icons/print.gif) no-repeat 0 3px;
+    padding: 5px 0 5px 25px;
+    overflow: hidden;
+}
+
+
+
+/******************************************************************
+Store locator results table
+******************************************************************/
+#layoutstoreLocatorResults .body 
+{
+    padding: 10px 31px;
+}
+
+#layoutstoreLocatorResults .count {
+	float: left;
+	width: 450px;
+	padding: 3px 0;
+}
+
+#layoutstoreLocatorResults .storeCount 
+{
+    font-weight: bold;
+}
+
+#storeLocatorResultsTable {
+	width: 876px;
+	padding: 0;
+}
+
+#storeLocatorResultsTable tr.alt, #storeLocatorResultsTable tr.alt td
+{
+    background: #f4f4f4;
+}
+
+#storeLocatorResultsTable th {
+ text-align: left;
+}
+#storeLocatorResultsTable td, #storeLocatorResultsTable th {
+	padding: 0;
+	margin: 0;
+	vertical-align: top;
+}
+
+#layoutstoreLocatorResults #storeLocatorResultsTable p 
+{
+    padding: 0 0 5px 0;
+    margin: 0;
+    font-size: 1em;
+}
+
+#storeLocatorResultsTable #column1 {
+	width: 100px;
+}
+
+#storeLocatorResultsTable #column2
+{
+	width: 120px;
+}
+
+#storeLocatorResultsTable #column3 
+{
+	width: 145px;
+}
+
+#storeLocatorResultsTable #column4
+{
+    width: 79px;
+}
+
+#storeLocatorResultsTable #column5
+{
+    width: 69px;
+}
+
+#storeLocatorResultsTable #column6 {
+	width: 74px;
+}
+
+#storeLocatorResultsTable #column7 {
+	width: 285px;
+	padding-top: 25px;
+}
+
+#storeLocatorResultsTable a 
+{
+    /*margin-right: 15px;*/
+}
+
+#storeLocatorResultsTable a:link, #storeLocatorResultsTable a:visited {
+	text-decoration: underline;
+}
+
+#storeLocatorResultsTable a:hover, #storeLocatorResultsTable a:active {
+	text-decoration: none;
+}
+
+#storeLocatorResultsTable input {
+	width: 165px;
+}
+
+#storeLocatorResultsTable .shortBtn {
+	width: 130px;
+}
+
+#storeLocatorResultsTable .pagination {
+	text-align: left;
+	float: left;
+	font-size: .9em;
+}
+
+#storeLocatorResultsTable td .body, #storeLocatorResultsTable th,  #storeLocatorResultsTable td
+{
+    padding: 10px 0;
+    margin: 0;
+}
+
+#storeLocatorResultsTable td.firstCol, #storeLocatorResultsTable th.firstCol 
+{
+    padding-left: 5px;
+}
+
+#storeLocatorResultsTable tr
+{
+    padding-left: 5px;
+}
+
+#storeLocatorResultsTable .blankRow 
+{
+    height: 1px;
+    line-height: 1px;
+}
+
+#storeLocatorResultsTable #pagFooter 
+{
+
+    font-size: .9em;
+    text-align: left;
+}
+
+#storeLocatorResultsHeader {
+	clear: both;
+	overflow:hidden;
+	background: #f4f4f4;
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: 10px 5px;
+}
+
+#layoutstoreLocatorResults #locatorNewSearch, #layoutstoreLocatorResults #locatorSortBy
+{
+    width: 115px;
+    float: left;
+}
+
+ #layoutstoreLocatorResults #locatorSortBy 
+ {
+    width: 150px;
+ }
+
+
+
+#storeLocatorResultsHeader .storesFound p {
+	margin: 2px 0;
+}
+
+#storeLocatorResultsHeader .numberOfStores {
+	font-size: 80%;
+}	
+
+#storeLocatorResultsHeader .locatorNewSearch {
+	width: 250px;	
+	text-align: center;
+	float: left;
+}
+
+.makePreferred
+{
+    background: url(../siteCollectionImages/icons/makePreferredStore.gif) no-repeat 0 3px;
+    padding: 0 0 10px 20px;
+    overflow: hidden;
+    display: block;
+}
+
+.viewWeeklyAd 
+{
+    background: url(../siteCollectionImages/icons/viewWeeklyAd.gif) no-repeat 0 3px;
+    margin: 5px 0;
+    padding: 5px 0 5px 20px;
+    overflow: hidden;
+    display: block;
+}
+
+.submitBtn {
+	background:transparent url(../SiteCollectionImages/common/btn_silverLeft.gif) no-repeat scroll left top;
+	float:left;
+	height:22px;
+	margin:0pt;
+	padding:0pt 0pt 0pt 9px;
+}
+
+.submitBtn a {
+	background:transparent url(../SiteCollectionImages/common/btn_silverRight.gif) no-repeat scroll right top;
+	color:#000000;
+	float:left;
+	font-size:12px;
+	font-weight:700;
+	height:22px;
+	margin:0pt;
+	padding:1px 15px 9px 2px;
+	text-decoration:none;
+}
+
+.submitBtn input {
+	background:transparent url(../SiteCollectionImages/common/btn_silverRight.gif) no-repeat scroll right top;
+	color:#000000;
+	float:left;
+	font-size:12px;
+	font-weight:700;
+	height:22px;
+	margin:0pt;
+	padding:1px 15px 9px 2px;
+	text-decoration:none;
+	border: none;
+}
+
+#storeLocatorResultsHeader .locatorSortBy {
+	width: 200px;
+	text-align: center;
+	float: left;
+}
+
+/******************************************************************
+Search results table
+******************************************************************/
+
+.searchResults {
+	width: 95%;
+	padding: 5px;
+	border: 1px solid #cccccc;
+	margin: 0;
+}
+
+.searchResults tr {
+	margin: 2px 5px;
+}
+
+.searchResults .altRow {
+	background: #cccccc;
+}
+
+.searchResults .paginationRow {
+	background: #cccccc;
+
+}
+
+.searchResults .paginationRow td {
+	text-transform: uppercase;
+	text-align: right;
+}
+
+/******************************************************************
+Sitemap page
+******************************************************************/
+
+#sitemapBox {
+	font-size: 90%;
+	width: 750px;
+	overflow: hidden;
+	border: 1px solid #666666;
+	background: #f0f0f0;
+}
+
+#sitemapBox ul {
+	padding: 2px 5px;
+	margin: 0;
+}
+
+#sitemapBox .columnEntry, #sitemapBox .columnEntryLast {
+	width: 149px;
+	height: 13em;
+	border-right: 1px solid #333;
+	border-bottom: 1px solid #333;
+	visibility: inherit;
+	float: left;
+	padding: 0;
+	margin: 0;
+	background:#f0f0f0;
+	font-size: 90%;
+}
+
+#sitemapBox .columnEntryLast  {
+	border-right: none;
+}
+
+#sitemapBox .header {
+	font-weight: bold;
+}
+
+/******************************************************************
+Store Details Page
+******************************************************************/
+
+.leftColumnStoreDetails, .rightColumnStoreDetails {
+	width: 40%;
+	float: left;
+	margin: 10px 0;
+}
+
+.leftColumnStoreDetails h3, .rightColumnStoreDetails h3 {
+	padding-top: 0;
+	margin-top: 0;
+}
+
+.leftColumnStoreDetails {
+	border-right: 1px solid #cccccc;
+	padding: 0 10px 0 0;
+}
+
+.rightColumnStoreDetails {
+	padding: 0 0 0 10px;
+}
+
+.storeHours, .pharmHours {
+	width: 300px;
+}
+
+.storeHours, .pharmHours th {
+	text-align: left;
+}
+
+#storeServices ul {
+	float: left;
+	width: 160px;
+	padding-left: 0;
+	margin-left: 0;
+}
